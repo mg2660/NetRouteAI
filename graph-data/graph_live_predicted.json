@@ -1,0 +1,2846 @@
+{
+  "nodes": [
+    {
+      "id": "AMF_004",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.42,
+        "alarm_status": "YELLOW",
+        "temperature": 97.7,
+        "memory_usage": 71.16,
+        "latency_avg": 25.85,
+        "location": "S\u00c3\u00a3o Paulo",
+        "id": "AMF_004",
+        "cpu_usage": 15.85,
+        "type": "AMF",
+        "status_last_updated": "2025-06-07T06:42:49",
+        "uptime_hours": 1902
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "gNB_001",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.4,
+        "alarm_status": "GREEN",
+        "temperature": 60.8,
+        "memory_usage": 47.87,
+        "latency_avg": 10.73,
+        "location": "Paris",
+        "id": "gNB_001",
+        "cpu_usage": 35.23,
+        "type": "gNB",
+        "status_last_updated": "2025-05-29T14:57:49",
+        "uptime_hours": 503
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "gNB_012",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.36,
+        "alarm_status": "GREEN",
+        "temperature": 51.4,
+        "memory_usage": 36.66,
+        "latency_avg": 18.8,
+        "location": "Sydney",
+        "id": "gNB_012",
+        "cpu_usage": 37.58,
+        "type": "gNB",
+        "status_last_updated": "2025-06-11T06:52:49",
+        "uptime_hours": 2551
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "gNB_002",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.29,
+        "alarm_status": "GREEN",
+        "temperature": 78.5,
+        "memory_usage": 43.27,
+        "latency_avg": 18.43,
+        "location": "New York",
+        "id": "gNB_002",
+        "cpu_usage": 45.04,
+        "type": "gNB",
+        "status_last_updated": "2025-06-17T23:35:49",
+        "uptime_hours": 717
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "FIREWALL_001",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.8,
+        "alarm_status": "YELLOW",
+        "temperature": 72.5,
+        "memory_usage": 35.99,
+        "latency_avg": 26.16,
+        "location": "Paris",
+        "id": "FIREWALL_001",
+        "cpu_usage": 45.41,
+        "type": "FIREWALL",
+        "status_last_updated": "2025-06-23T02:19:49",
+        "uptime_hours": 1702
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "AMF_002",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.64,
+        "alarm_status": "YELLOW",
+        "temperature": 88.6,
+        "memory_usage": 62.7,
+        "latency_avg": 28.04,
+        "location": "Tokyo",
+        "id": "AMF_002",
+        "cpu_usage": 56.18,
+        "type": "AMF",
+        "status_last_updated": "2025-06-15T02:57:49",
+        "uptime_hours": 4866
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "gNB_003",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.58,
+        "alarm_status": "GREEN",
+        "temperature": 58.4,
+        "memory_usage": 45.8,
+        "latency_avg": 24.72,
+        "location": "Toronto",
+        "id": "gNB_003",
+        "cpu_usage": 30.45,
+        "type": "gNB",
+        "status_last_updated": "2025-06-20T04:05:49",
+        "uptime_hours": 729
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "gNB_004",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.76,
+        "alarm_status": "YELLOW",
+        "temperature": 77.1,
+        "memory_usage": 50.14,
+        "latency_avg": 27.84,
+        "location": "Cape Town",
+        "id": "gNB_004",
+        "cpu_usage": 36.73,
+        "type": "gNB",
+        "status_last_updated": "2025-06-23T17:06:49",
+        "uptime_hours": 4317
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "FIREWALL_005",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 2.16,
+        "alarm_status": "YELLOW",
+        "temperature": 63.5,
+        "memory_usage": 46.77,
+        "latency_avg": 27.29,
+        "location": "Paris",
+        "id": "FIREWALL_005",
+        "cpu_usage": 34.73,
+        "type": "FIREWALL",
+        "status_last_updated": "2025-06-02T22:14:49",
+        "uptime_hours": 3799
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "gNB_005",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.28,
+        "alarm_status": "GREEN",
+        "temperature": 85.1,
+        "memory_usage": 69.48,
+        "latency_avg": 11.51,
+        "location": "Mumbai",
+        "id": "gNB_005",
+        "cpu_usage": 21.59,
+        "type": "gNB",
+        "status_last_updated": "2025-05-31T18:29:49",
+        "uptime_hours": 3591
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "AMF_001",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.28,
+        "alarm_status": "GREEN",
+        "temperature": 67.1,
+        "memory_usage": 41.57,
+        "latency_avg": 10.84,
+        "location": "Sydney",
+        "id": "AMF_001",
+        "cpu_usage": 67.32,
+        "type": "AMF",
+        "status_last_updated": "2025-05-29T16:24:49",
+        "uptime_hours": 2221
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "MONITOR_004",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 2.05,
+        "alarm_status": "GREEN",
+        "temperature": 78.8,
+        "memory_usage": 26.13,
+        "latency_avg": 23.29,
+        "location": "London",
+        "id": "MONITOR_004",
+        "cpu_usage": 38.4,
+        "type": "MONITOR",
+        "status_last_updated": "2025-06-06T15:36:49",
+        "uptime_hours": 4623
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "gNB_009",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.56,
+        "alarm_status": "YELLOW",
+        "temperature": 99.2,
+        "memory_usage": 37.96,
+        "latency_avg": 25.35,
+        "location": "S\u00c3\u00a3o Paulo",
+        "id": "gNB_009",
+        "cpu_usage": 63.6,
+        "type": "gNB",
+        "status_last_updated": "2025-06-10T08:30:49",
+        "uptime_hours": 2628
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "gNB_006",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.91,
+        "alarm_status": "YELLOW",
+        "temperature": 76.6,
+        "memory_usage": 23.37,
+        "latency_avg": 25.5,
+        "location": "New York",
+        "id": "gNB_006",
+        "cpu_usage": 49.44,
+        "type": "gNB",
+        "status_last_updated": "2025-06-09T07:24:49",
+        "uptime_hours": 4020
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "gNB_007",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 0.98,
+        "alarm_status": "GREEN",
+        "temperature": 50.8,
+        "memory_usage": 59.07,
+        "latency_avg": 12.45,
+        "location": "Toronto",
+        "id": "gNB_007",
+        "cpu_usage": 17.48,
+        "type": "gNB",
+        "status_last_updated": "2025-06-12T13:57:49",
+        "uptime_hours": 2729
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "UPF_001",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.82,
+        "alarm_status": "YELLOW",
+        "temperature": 78,
+        "memory_usage": 56.21,
+        "latency_avg": 29.85,
+        "location": "Paris",
+        "id": "UPF_001",
+        "cpu_usage": 39.35,
+        "type": "UPF",
+        "status_last_updated": "2025-06-11T11:57:49",
+        "uptime_hours": 4907
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "gNB_008",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 2.07,
+        "alarm_status": "GREEN",
+        "temperature": 66.6,
+        "memory_usage": 40.86,
+        "latency_avg": 24.33,
+        "location": "Toronto",
+        "id": "gNB_008",
+        "cpu_usage": 28.38,
+        "type": "gNB",
+        "status_last_updated": "2025-06-13T08:19:49",
+        "uptime_hours": 3649
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "MONITOR_003",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.18,
+        "alarm_status": "GREEN",
+        "temperature": 64.3,
+        "memory_usage": 36.92,
+        "latency_avg": 16.31,
+        "location": "S\u00c3\u00a3o Paulo",
+        "id": "MONITOR_003",
+        "cpu_usage": 33.69,
+        "type": "MONITOR",
+        "status_last_updated": "2025-06-25T15:12:49",
+        "uptime_hours": 2646
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "EDGE_DC_004",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.76,
+        "alarm_status": "GREEN",
+        "temperature": 58.3,
+        "memory_usage": 71.44,
+        "latency_avg": 22.84,
+        "location": "Paris",
+        "id": "EDGE_DC_004",
+        "cpu_usage": 53.5,
+        "type": "EDGE_DC",
+        "status_last_updated": "2025-06-05T09:38:49",
+        "uptime_hours": 4063
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "EDGE_DC_006",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.74,
+        "alarm_status": "YELLOW",
+        "temperature": 59.7,
+        "memory_usage": 63.81,
+        "latency_avg": 33.32,
+        "location": "New York",
+        "id": "EDGE_DC_006",
+        "cpu_usage": 42.8,
+        "type": "EDGE_DC",
+        "status_last_updated": "2025-06-03T19:48:49",
+        "uptime_hours": 986
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "AMF_007",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.33,
+        "alarm_status": "GREEN",
+        "temperature": 99,
+        "memory_usage": 60.31,
+        "latency_avg": 11.01,
+        "location": "New York",
+        "id": "AMF_007",
+        "cpu_usage": 41.83,
+        "type": "AMF",
+        "status_last_updated": "2025-06-16T16:46:49",
+        "uptime_hours": 1072
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "gNB_010",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.01,
+        "alarm_status": "GREEN",
+        "temperature": 98.2,
+        "memory_usage": 28.67,
+        "latency_avg": 19.14,
+        "location": "Toronto",
+        "id": "gNB_010",
+        "cpu_usage": 56.39,
+        "type": "gNB",
+        "status_last_updated": "2025-06-01T22:47:49",
+        "uptime_hours": 4086
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "gNB_013",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.26,
+        "alarm_status": "GREEN",
+        "temperature": 51.1,
+        "memory_usage": 34.42,
+        "latency_avg": 19.54,
+        "location": "Cape Town",
+        "id": "gNB_013",
+        "cpu_usage": 16.56,
+        "type": "gNB",
+        "status_last_updated": "2025-06-15T17:21:49",
+        "uptime_hours": 1160
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "SMF_003",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.71,
+        "alarm_status": "YELLOW",
+        "temperature": 70.1,
+        "memory_usage": 63.56,
+        "latency_avg": 28.69,
+        "location": "Sydney",
+        "id": "SMF_003",
+        "cpu_usage": 25.44,
+        "type": "SMF",
+        "status_last_updated": "2025-06-04T04:10:49",
+        "uptime_hours": 1050
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "CORE_DC_003",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 2.11,
+        "alarm_status": "GREEN",
+        "temperature": 90,
+        "memory_usage": 47.12,
+        "latency_avg": 23.67,
+        "location": "Sydney",
+        "id": "CORE_DC_003",
+        "cpu_usage": 29.01,
+        "type": "CORE_DC",
+        "status_last_updated": "2025-06-19T17:59:49",
+        "uptime_hours": 3274
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "gNB_014",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.59,
+        "alarm_status": "GREEN",
+        "temperature": 64.4,
+        "memory_usage": 50.49,
+        "latency_avg": 12.99,
+        "location": "S\u00c3\u00a3o Paulo",
+        "id": "gNB_014",
+        "cpu_usage": 24.08,
+        "type": "gNB",
+        "status_last_updated": "2025-06-19T02:55:49",
+        "uptime_hours": 2816
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "UPF_010",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.27,
+        "alarm_status": "GREEN",
+        "temperature": 65.7,
+        "memory_usage": 65.37,
+        "latency_avg": 12.62,
+        "location": "London",
+        "id": "UPF_010",
+        "cpu_usage": 55.64,
+        "type": "UPF",
+        "status_last_updated": "2025-06-02T05:08:49",
+        "uptime_hours": 1955
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "gNB_015",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.84,
+        "alarm_status": "GREEN",
+        "temperature": 71.8,
+        "memory_usage": 39.32,
+        "latency_avg": 17.66,
+        "location": "London",
+        "id": "gNB_015",
+        "cpu_usage": 29.99,
+        "type": "gNB",
+        "status_last_updated": "2025-06-04T19:11:49",
+        "uptime_hours": 4321
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "gNB_017",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.3,
+        "alarm_status": "GREEN",
+        "temperature": 70.7,
+        "memory_usage": 58.37,
+        "latency_avg": 11.15,
+        "location": "Paris",
+        "id": "gNB_017",
+        "cpu_usage": 68.12,
+        "type": "gNB",
+        "status_last_updated": "2025-06-20T09:53:49",
+        "uptime_hours": 608
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "AMF_003",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.19,
+        "alarm_status": "GREEN",
+        "temperature": 60.3,
+        "memory_usage": 52.24,
+        "latency_avg": 12.08,
+        "location": "Sydney",
+        "id": "AMF_003",
+        "cpu_usage": 49.74,
+        "type": "AMF",
+        "status_last_updated": "2025-06-05T11:40:49",
+        "uptime_hours": 2825
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "gNB_016",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 0.7,
+        "alarm_status": "GREEN",
+        "temperature": 85.3,
+        "memory_usage": 46.18,
+        "latency_avg": 13.04,
+        "location": "Tokyo",
+        "id": "gNB_016",
+        "cpu_usage": 42.25,
+        "type": "gNB",
+        "status_last_updated": "2025-06-07T20:34:49",
+        "uptime_hours": 3404
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "AMF_008",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.42,
+        "alarm_status": "GREEN",
+        "temperature": 59.8,
+        "memory_usage": 28.93,
+        "latency_avg": 17.54,
+        "location": "Toronto",
+        "id": "AMF_008",
+        "cpu_usage": 29.82,
+        "type": "AMF",
+        "status_last_updated": "2025-06-23T14:48:49",
+        "uptime_hours": 4504
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "gNB_018",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.26,
+        "alarm_status": "GREEN",
+        "temperature": 64.3,
+        "memory_usage": 24.52,
+        "latency_avg": 21.87,
+        "location": "Cape Town",
+        "id": "gNB_018",
+        "cpu_usage": 23.34,
+        "type": "gNB",
+        "status_last_updated": "2025-06-01T20:01:49",
+        "uptime_hours": 3902
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "UPF_003",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.18,
+        "alarm_status": "GREEN",
+        "temperature": 86.5,
+        "memory_usage": 62,
+        "latency_avg": 19.43,
+        "location": "Toronto",
+        "id": "UPF_003",
+        "cpu_usage": 27.82,
+        "type": "UPF",
+        "status_last_updated": "2025-06-07T04:13:49",
+        "uptime_hours": 4170
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "SMF_002",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.15,
+        "alarm_status": "GREEN",
+        "temperature": 96.9,
+        "memory_usage": 45.27,
+        "latency_avg": 18.99,
+        "location": "Cape Town",
+        "id": "SMF_002",
+        "cpu_usage": 47.98,
+        "type": "SMF",
+        "status_last_updated": "2025-06-09T09:39:49",
+        "uptime_hours": 501
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "gNB_020",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.9,
+        "alarm_status": "GREEN",
+        "temperature": 84.7,
+        "memory_usage": 52.86,
+        "latency_avg": 24.48,
+        "location": "New York",
+        "id": "gNB_020",
+        "cpu_usage": 28.46,
+        "type": "gNB",
+        "status_last_updated": "2025-06-11T03:25:49",
+        "uptime_hours": 2775
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "gNB_019",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.45,
+        "alarm_status": "GREEN",
+        "temperature": 77.1,
+        "memory_usage": 32.58,
+        "latency_avg": 17.31,
+        "location": "Sydney",
+        "id": "gNB_019",
+        "cpu_usage": 61.36,
+        "type": "gNB",
+        "status_last_updated": "2025-06-13T09:56:49",
+        "uptime_hours": 4268
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "UPF_002",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.31,
+        "alarm_status": "GREEN",
+        "temperature": 82,
+        "memory_usage": 19.57,
+        "latency_avg": 15.37,
+        "location": "Cape Town",
+        "id": "UPF_002",
+        "cpu_usage": 51.8,
+        "type": "UPF",
+        "status_last_updated": "2025-06-14T20:48:49",
+        "uptime_hours": 1479
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "EDGE_DC_003",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 0.94,
+        "alarm_status": "GREEN",
+        "temperature": 76.5,
+        "memory_usage": 40.77,
+        "latency_avg": 16.1,
+        "location": "Paris",
+        "id": "EDGE_DC_003",
+        "cpu_usage": 63.41,
+        "type": "EDGE_DC",
+        "status_last_updated": "2025-05-29T08:53:49",
+        "uptime_hours": 624
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "EDGE_DC_005",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.15,
+        "alarm_status": "GREEN",
+        "temperature": 64.1,
+        "memory_usage": 41.45,
+        "latency_avg": 14.78,
+        "location": "Mumbai",
+        "id": "EDGE_DC_005",
+        "cpu_usage": 68.09,
+        "type": "EDGE_DC",
+        "status_last_updated": "2025-06-05T15:57:49",
+        "uptime_hours": 2701
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "MONITOR_002",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 2,
+        "alarm_status": "GREEN",
+        "temperature": 97.3,
+        "memory_usage": 55.52,
+        "latency_avg": 21.36,
+        "location": "Paris",
+        "id": "MONITOR_002",
+        "cpu_usage": 17.15,
+        "type": "MONITOR",
+        "status_last_updated": "2025-05-30T16:27:49",
+        "uptime_hours": 1383
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "UPF_004",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 2.74,
+        "alarm_status": "RED",
+        "temperature": 89.4,
+        "memory_usage": 20.44,
+        "latency_avg": 53.95,
+        "location": "Berlin",
+        "id": "UPF_004",
+        "cpu_usage": 51.44,
+        "type": "UPF",
+        "status_last_updated": "2025-06-09T00:29:49",
+        "uptime_hours": 2538
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "UPF_008",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.02,
+        "alarm_status": "GREEN",
+        "temperature": 83.1,
+        "memory_usage": 36.68,
+        "latency_avg": 10.65,
+        "location": "Berlin",
+        "id": "UPF_008",
+        "cpu_usage": 51.59,
+        "type": "UPF",
+        "status_last_updated": "2025-06-22T15:08:49",
+        "uptime_hours": 4004
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "UPF_005",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 0.74,
+        "alarm_status": "GREEN",
+        "temperature": 84.1,
+        "memory_usage": 41.5,
+        "latency_avg": 14.85,
+        "location": "Mumbai",
+        "id": "UPF_005",
+        "cpu_usage": 50.88,
+        "type": "UPF",
+        "status_last_updated": "2025-06-08T15:32:49",
+        "uptime_hours": 3826
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "UPF_006",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.57,
+        "alarm_status": "GREEN",
+        "temperature": 78.6,
+        "memory_usage": 50.83,
+        "latency_avg": 22.17,
+        "location": "Mumbai",
+        "id": "UPF_006",
+        "cpu_usage": 55.4,
+        "type": "UPF",
+        "status_last_updated": "2025-06-02T07:05:49",
+        "uptime_hours": 2171
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "SMF_006",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.85,
+        "alarm_status": "GREEN",
+        "temperature": 85.5,
+        "memory_usage": 35.87,
+        "latency_avg": 18.22,
+        "location": "Mumbai",
+        "id": "SMF_006",
+        "cpu_usage": 58.73,
+        "type": "SMF",
+        "status_last_updated": "2025-06-22T01:25:49",
+        "uptime_hours": 4805
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "SMF_007",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.89,
+        "alarm_status": "YELLOW",
+        "temperature": 92.7,
+        "memory_usage": 65.68,
+        "latency_avg": 26.06,
+        "location": "Paris",
+        "id": "SMF_007",
+        "cpu_usage": 21.81,
+        "type": "SMF",
+        "status_last_updated": "2025-06-06T10:50:49",
+        "uptime_hours": 1275
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "UPF_009",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 2.08,
+        "alarm_status": "GREEN",
+        "temperature": 87.5,
+        "memory_usage": 63.18,
+        "latency_avg": 24.48,
+        "location": "Mumbai",
+        "id": "UPF_009",
+        "cpu_usage": 49.57,
+        "type": "UPF",
+        "status_last_updated": "2025-06-20T13:41:49",
+        "uptime_hours": 2698
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "UPF_007",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.84,
+        "alarm_status": "GREEN",
+        "temperature": 95.4,
+        "memory_usage": 27.92,
+        "latency_avg": 24.97,
+        "location": "Toronto",
+        "id": "UPF_007",
+        "cpu_usage": 33.22,
+        "type": "UPF",
+        "status_last_updated": "2025-05-28T10:22:49",
+        "uptime_hours": 935
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "AMF_005",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.48,
+        "alarm_status": "GREEN",
+        "temperature": 89.5,
+        "memory_usage": 35.11,
+        "latency_avg": 24.04,
+        "location": "London",
+        "id": "AMF_005",
+        "cpu_usage": 66.3,
+        "type": "AMF",
+        "status_last_updated": "2025-05-31T02:09:49",
+        "uptime_hours": 1421
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "CORE_DC_001",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 0.56,
+        "alarm_status": "GREEN",
+        "temperature": 73.5,
+        "memory_usage": 18.55,
+        "latency_avg": 11.24,
+        "location": "Cape Town",
+        "id": "CORE_DC_001",
+        "cpu_usage": 23.87,
+        "type": "CORE_DC",
+        "status_last_updated": "2025-06-24T01:33:49",
+        "uptime_hours": 4363
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "AMF_006",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.91,
+        "alarm_status": "GREEN",
+        "temperature": 92.5,
+        "memory_usage": 38.31,
+        "latency_avg": 23.49,
+        "location": "Mumbai",
+        "id": "AMF_006",
+        "cpu_usage": 49.44,
+        "type": "AMF",
+        "status_last_updated": "2025-06-04T05:43:49",
+        "uptime_hours": 4126
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "CORE_DC_004",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.29,
+        "alarm_status": "GREEN",
+        "temperature": 66.8,
+        "memory_usage": 42.61,
+        "latency_avg": 19.05,
+        "location": "Tokyo",
+        "id": "CORE_DC_004",
+        "cpu_usage": 38.13,
+        "type": "CORE_DC",
+        "status_last_updated": "2025-06-24T00:43:49",
+        "uptime_hours": 305
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "gNB_011",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.72,
+        "alarm_status": "YELLOW",
+        "temperature": 76.2,
+        "memory_usage": 66.11,
+        "latency_avg": 26.21,
+        "location": "Cape Town",
+        "id": "gNB_011",
+        "cpu_usage": 63.77,
+        "type": "gNB",
+        "status_last_updated": "2025-06-14T19:19:49",
+        "uptime_hours": 1784
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "SMF_001",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 2.32,
+        "alarm_status": "YELLOW",
+        "temperature": 93.7,
+        "memory_usage": 34.83,
+        "latency_avg": 29.82,
+        "location": "Berlin",
+        "id": "SMF_001",
+        "cpu_usage": 22.02,
+        "type": "SMF",
+        "status_last_updated": "2025-06-09T11:15:49",
+        "uptime_hours": 1928
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "FIREWALL_004",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.02,
+        "alarm_status": "GREEN",
+        "temperature": 52.8,
+        "memory_usage": 68.51,
+        "latency_avg": 18.75,
+        "location": "S\u00c3\u00a3o Paulo",
+        "id": "FIREWALL_004",
+        "cpu_usage": 35.92,
+        "type": "FIREWALL",
+        "status_last_updated": "2025-06-10T07:57:49",
+        "uptime_hours": 2068
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "SMF_004",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 0.95,
+        "alarm_status": "GREEN",
+        "temperature": 90.6,
+        "memory_usage": 45.11,
+        "latency_avg": 15.45,
+        "location": "Berlin",
+        "id": "SMF_004",
+        "cpu_usage": 57.46,
+        "type": "SMF",
+        "status_last_updated": "2025-06-26T01:28:49",
+        "uptime_hours": 420
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "CORE_DC_002",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.04,
+        "alarm_status": "GREEN",
+        "temperature": 56.3,
+        "memory_usage": 51.3,
+        "latency_avg": 10.42,
+        "location": "Cape Town",
+        "id": "CORE_DC_002",
+        "cpu_usage": 16.68,
+        "type": "CORE_DC",
+        "status_last_updated": "2025-05-29T22:47:49",
+        "uptime_hours": 809
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "SMF_005",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.85,
+        "alarm_status": "GREEN",
+        "temperature": 68.7,
+        "memory_usage": 45.57,
+        "latency_avg": 19.98,
+        "location": "Tokyo",
+        "id": "SMF_005",
+        "cpu_usage": 20.91,
+        "type": "SMF",
+        "status_last_updated": "2025-06-13T09:12:49",
+        "uptime_hours": 59
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "EDGE_DC_001",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.81,
+        "alarm_status": "YELLOW",
+        "temperature": 99.2,
+        "memory_usage": 52.13,
+        "latency_avg": 34.94,
+        "location": "Berlin",
+        "id": "EDGE_DC_001",
+        "cpu_usage": 31.12,
+        "type": "EDGE_DC",
+        "status_last_updated": "2025-06-18T10:04:49",
+        "uptime_hours": 3849
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "EDGE_DC_002",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 2.11,
+        "alarm_status": "YELLOW",
+        "temperature": 51.1,
+        "memory_usage": 50.5,
+        "latency_avg": 25.58,
+        "location": "Berlin",
+        "id": "EDGE_DC_002",
+        "cpu_usage": 39.4,
+        "type": "EDGE_DC",
+        "status_last_updated": "2025-06-12T08:56:49",
+        "uptime_hours": 2301
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "FIREWALL_002",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.45,
+        "alarm_status": "YELLOW",
+        "temperature": 73.8,
+        "memory_usage": 64.35,
+        "latency_avg": 27.1,
+        "location": "Toronto",
+        "id": "FIREWALL_002",
+        "cpu_usage": 66.29,
+        "type": "FIREWALL",
+        "status_last_updated": "2025-06-10T19:16:49",
+        "uptime_hours": 525
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "MONITOR_005",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.44,
+        "alarm_status": "YELLOW",
+        "temperature": 88.3,
+        "memory_usage": 41.89,
+        "latency_avg": 24.88,
+        "location": "Paris",
+        "id": "MONITOR_005",
+        "cpu_usage": 70.54,
+        "type": "MONITOR",
+        "status_last_updated": "2025-06-22T19:07:49",
+        "uptime_hours": 1778
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "EDGE_DC_007",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 0.88,
+        "alarm_status": "GREEN",
+        "temperature": 82.1,
+        "memory_usage": 62.32,
+        "latency_avg": 11.98,
+        "location": "S\u00c3\u00a3o Paulo",
+        "id": "EDGE_DC_007",
+        "cpu_usage": 43.59,
+        "type": "EDGE_DC",
+        "status_last_updated": "2025-06-16T17:24:49",
+        "uptime_hours": 2348
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "EDGE_DC_008",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 0.86,
+        "alarm_status": "GREEN",
+        "temperature": 81.4,
+        "memory_usage": 32.58,
+        "latency_avg": 10.3,
+        "location": "Berlin",
+        "id": "EDGE_DC_008",
+        "cpu_usage": 18.43,
+        "type": "EDGE_DC",
+        "status_last_updated": "2025-06-20T04:21:49",
+        "uptime_hours": 3254
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "MONITOR_001",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 3.77,
+        "alarm_status": "RED",
+        "temperature": 75.8,
+        "memory_usage": 59.86,
+        "latency_avg": 62.18,
+        "location": "New York",
+        "id": "MONITOR_001",
+        "cpu_usage": 30.25,
+        "type": "MONITOR",
+        "status_last_updated": "2025-06-02T19:22:49",
+        "uptime_hours": 2433
+      },
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "id": "FIREWALL_003",
+      "properties": {
+        "is_overloaded": false,
+        "packet_loss_rate": 1.15,
+        "alarm_status": "GREEN",
+        "temperature": 57,
+        "memory_usage": 41.74,
+        "latency_avg": 13.57,
+        "location": "Paris",
+        "id": "FIREWALL_003",
+        "cpu_usage": 40.85,
+        "type": "FIREWALL",
+        "status_last_updated": "2025-06-10T15:02:49",
+        "uptime_hours": 2033
+      },
+      "labels": [
+        "Node"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "AMF_004",
+      "target": "gNB_001",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 19,
+        "predicted_latency_ms": 22.950000762939453
+      }
+    },
+    {
+      "source": "gNB_012",
+      "target": "gNB_002",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 17,
+        "predicted_latency_ms": 21.0
+      }
+    },
+    {
+      "source": "FIREWALL_001",
+      "target": "gNB_002",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 20,
+        "predicted_latency_ms": 24.290000915527344
+      }
+    },
+    {
+      "source": "FIREWALL_001",
+      "target": "gNB_002",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 17,
+        "predicted_latency_ms": 24.290000915527344
+      }
+    },
+    {
+      "source": "AMF_002",
+      "target": "gNB_003",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 27,
+        "predicted_latency_ms": 25.18000030517578
+      }
+    },
+    {
+      "source": "FIREWALL_001",
+      "target": "gNB_004",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 28,
+        "predicted_latency_ms": 30.969999313354492
+      }
+    },
+    {
+      "source": "FIREWALL_005",
+      "target": "gNB_004",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 27,
+        "predicted_latency_ms": 32.83000183105469
+      }
+    },
+    {
+      "source": "gNB_002",
+      "target": "gNB_005",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 13,
+        "predicted_latency_ms": 21.780000686645508
+      }
+    },
+    {
+      "source": "AMF_001",
+      "target": "gNB_005",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 7,
+        "predicted_latency_ms": 20.649999618530273
+      }
+    },
+    {
+      "source": "MONITOR_004",
+      "target": "gNB_005",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 13,
+        "predicted_latency_ms": 26.469999313354492
+      }
+    },
+    {
+      "source": "gNB_009",
+      "target": "gNB_006",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 23,
+        "predicted_latency_ms": 28.770000457763672
+      }
+    },
+    {
+      "source": "gNB_006",
+      "target": "gNB_007",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 17,
+        "predicted_latency_ms": 23.489999771118164
+      }
+    },
+    {
+      "source": "UPF_001",
+      "target": "gNB_008",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 28,
+        "predicted_latency_ms": 31.920000076293945
+      }
+    },
+    {
+      "source": "MONITOR_003",
+      "target": "gNB_008",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 22,
+        "predicted_latency_ms": 25.270000457763672
+      }
+    },
+    {
+      "source": "gNB_012",
+      "target": "gNB_009",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 23,
+        "predicted_latency_ms": 27.010000228881836
+      }
+    },
+    {
+      "source": "EDGE_DC_004",
+      "target": "gNB_009",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 28,
+        "predicted_latency_ms": 29.489999771118164
+      }
+    },
+    {
+      "source": "EDGE_DC_006",
+      "target": "gNB_009",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 25,
+        "predicted_latency_ms": 29.5
+      }
+    },
+    {
+      "source": "FIREWALL_005",
+      "target": "gNB_009",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 28,
+        "predicted_latency_ms": 31.399999618530273
+      }
+    },
+    {
+      "source": "FIREWALL_005",
+      "target": "gNB_009",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 30,
+        "predicted_latency_ms": 31.399999618530273
+      }
+    },
+    {
+      "source": "AMF_007",
+      "target": "gNB_010",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 14,
+        "predicted_latency_ms": 21.280000686645508
+      }
+    },
+    {
+      "source": "gNB_013",
+      "target": "gNB_012",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 19,
+        "predicted_latency_ms": 21.229999542236328
+      }
+    },
+    {
+      "source": "SMF_003",
+      "target": "gNB_012",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 26,
+        "predicted_latency_ms": 23.829999923706055
+      }
+    },
+    {
+      "source": "CORE_DC_003",
+      "target": "gNB_012",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 23,
+        "predicted_latency_ms": 27.920000076293945
+      }
+    },
+    {
+      "source": "gNB_009",
+      "target": "gNB_013",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 21,
+        "predicted_latency_ms": 22.540000915527344
+      }
+    },
+    {
+      "source": "gNB_013",
+      "target": "gNB_014",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 11,
+        "predicted_latency_ms": 22.579999923706055
+      }
+    },
+    {
+      "source": "UPF_010",
+      "target": "gNB_014",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 13,
+        "predicted_latency_ms": 22.729999542236328
+      }
+    },
+    {
+      "source": "gNB_002",
+      "target": "gNB_015",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 16,
+        "predicted_latency_ms": 24.729999542236328
+      }
+    },
+    {
+      "source": "gNB_009",
+      "target": "gNB_015",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 16,
+        "predicted_latency_ms": 26.329999923706055
+      }
+    },
+    {
+      "source": "gNB_013",
+      "target": "gNB_015",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 15,
+        "predicted_latency_ms": 24.049999237060547
+      }
+    },
+    {
+      "source": "gNB_017",
+      "target": "gNB_015",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 19,
+        "predicted_latency_ms": 23.1200008392334
+      }
+    },
+    {
+      "source": "MONITOR_004",
+      "target": "gNB_015",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 15,
+        "predicted_latency_ms": 31.979999542236328
+      }
+    },
+    {
+      "source": "AMF_003",
+      "target": "gNB_016",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 12,
+        "predicted_latency_ms": 15.720000267028809
+      }
+    },
+    {
+      "source": "AMF_008",
+      "target": "gNB_016",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 16,
+        "predicted_latency_ms": 18.420000076293945
+      }
+    },
+    {
+      "source": "SMF_003",
+      "target": "gNB_016",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 22,
+        "predicted_latency_ms": 20.31999969482422
+      }
+    },
+    {
+      "source": "gNB_001",
+      "target": "gNB_018",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 13,
+        "predicted_latency_ms": 21.600000381469727
+      }
+    },
+    {
+      "source": "gNB_016",
+      "target": "gNB_018",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 15,
+        "predicted_latency_ms": 16.889999389648438
+      }
+    },
+    {
+      "source": "UPF_003",
+      "target": "gNB_018",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 19,
+        "predicted_latency_ms": 20.290000915527344
+      }
+    },
+    {
+      "source": "AMF_001",
+      "target": "gNB_018",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 20,
+        "predicted_latency_ms": 20.139999389648438
+      }
+    },
+    {
+      "source": "SMF_002",
+      "target": "gNB_018",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 21,
+        "predicted_latency_ms": 20.93000030517578
+      }
+    },
+    {
+      "source": "gNB_020",
+      "target": "gNB_019",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 17,
+        "predicted_latency_ms": 26.790000915527344
+      }
+    },
+    {
+      "source": "gNB_009",
+      "target": "gNB_020",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 22,
+        "predicted_latency_ms": 26.860000610351562
+      }
+    },
+    {
+      "source": "gNB_015",
+      "target": "gNB_020",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 20,
+        "predicted_latency_ms": 31.3799991607666
+      }
+    },
+    {
+      "source": "UPF_002",
+      "target": "gNB_020",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 24,
+        "predicted_latency_ms": 25.219999313354492
+      }
+    },
+    {
+      "source": "AMF_002",
+      "target": "gNB_020",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 28,
+        "predicted_latency_ms": 28.40999984741211
+      }
+    },
+    {
+      "source": "EDGE_DC_003",
+      "target": "gNB_020",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 19,
+        "predicted_latency_ms": 22.15999984741211
+      }
+    },
+    {
+      "source": "EDGE_DC_004",
+      "target": "gNB_020",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 25,
+        "predicted_latency_ms": 30.81999969482422
+      }
+    },
+    {
+      "source": "FIREWALL_001",
+      "target": "gNB_020",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 25,
+        "predicted_latency_ms": 30.84000015258789
+      }
+    },
+    {
+      "source": "gNB_006",
+      "target": "UPF_001",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 23,
+        "predicted_latency_ms": 31.610000610351562
+      }
+    },
+    {
+      "source": "EDGE_DC_003",
+      "target": "UPF_002",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 18,
+        "predicted_latency_ms": 18.3700008392334
+      }
+    },
+    {
+      "source": "gNB_002",
+      "target": "UPF_003",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 16,
+        "predicted_latency_ms": 20.25
+      }
+    },
+    {
+      "source": "gNB_003",
+      "target": "UPF_003",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 26,
+        "predicted_latency_ms": 22.010000228881836
+      }
+    },
+    {
+      "source": "EDGE_DC_005",
+      "target": "UPF_003",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 12,
+        "predicted_latency_ms": 19.280000686645508
+      }
+    },
+    {
+      "source": "MONITOR_002",
+      "target": "UPF_004",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 35,
+        "predicted_latency_ms": 41.84000015258789
+      }
+    },
+    {
+      "source": "UPF_008",
+      "target": "UPF_005",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 9,
+        "predicted_latency_ms": 15.90999984741211
+      }
+    },
+    {
+      "source": "AMF_004",
+      "target": "UPF_005",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 24,
+        "predicted_latency_ms": 18.670000076293945
+      }
+    },
+    {
+      "source": "gNB_007",
+      "target": "UPF_006",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 18,
+        "predicted_latency_ms": 21.18000030517578
+      }
+    },
+    {
+      "source": "AMF_007",
+      "target": "UPF_006",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 12,
+        "predicted_latency_ms": 24.200000762939453
+      }
+    },
+    {
+      "source": "SMF_006",
+      "target": "UPF_006",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 22,
+        "predicted_latency_ms": 26.65999984741211
+      }
+    },
+    {
+      "source": "gNB_012",
+      "target": "UPF_008",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 10,
+        "predicted_latency_ms": 20.579999923706055
+      }
+    },
+    {
+      "source": "UPF_004",
+      "target": "UPF_008",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 32,
+        "predicted_latency_ms": 31.56999969482422
+      }
+    },
+    {
+      "source": "SMF_007",
+      "target": "UPF_008",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 14,
+        "predicted_latency_ms": 23.540000915527344
+      }
+    },
+    {
+      "source": "gNB_017",
+      "target": "UPF_009",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 22,
+        "predicted_latency_ms": 24.809999465942383
+      }
+    },
+    {
+      "source": "UPF_010",
+      "target": "UPF_009",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 19,
+        "predicted_latency_ms": 26.709999084472656
+      }
+    },
+    {
+      "source": "SMF_007",
+      "target": "UPF_009",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 28,
+        "predicted_latency_ms": 35.45000076293945
+      }
+    },
+    {
+      "source": "EDGE_DC_006",
+      "target": "UPF_009",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 30,
+        "predicted_latency_ms": 32.27000045776367
+      }
+    },
+    {
+      "source": "FIREWALL_005",
+      "target": "UPF_009",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 29,
+        "predicted_latency_ms": 36.72999954223633
+      }
+    },
+    {
+      "source": "UPF_007",
+      "target": "UPF_010",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 15,
+        "predicted_latency_ms": 24.84000015258789
+      }
+    },
+    {
+      "source": "MONITOR_004",
+      "target": "UPF_010",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 14,
+        "predicted_latency_ms": 26.190000534057617
+      }
+    },
+    {
+      "source": "AMF_008",
+      "target": "AMF_001",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 15,
+        "predicted_latency_ms": 21.34000015258789
+      }
+    },
+    {
+      "source": "gNB_019",
+      "target": "AMF_002",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 21,
+        "predicted_latency_ms": 26.920000076293945
+      }
+    },
+    {
+      "source": "UPF_003",
+      "target": "AMF_002",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 26,
+        "predicted_latency_ms": 26.600000381469727
+      }
+    },
+    {
+      "source": "UPF_009",
+      "target": "AMF_002",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 21,
+        "predicted_latency_ms": 32.45000076293945
+      }
+    },
+    {
+      "source": "FIREWALL_005",
+      "target": "AMF_002",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 23,
+        "predicted_latency_ms": 32.11000061035156
+      }
+    },
+    {
+      "source": "UPF_008",
+      "target": "AMF_003",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 10,
+        "predicted_latency_ms": 18.989999771118164
+      }
+    },
+    {
+      "source": "gNB_005",
+      "target": "AMF_004",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 13,
+        "predicted_latency_ms": 26.34000015258789
+      }
+    },
+    {
+      "source": "AMF_007",
+      "target": "AMF_004",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 16,
+        "predicted_latency_ms": 26.040000915527344
+      }
+    },
+    {
+      "source": "CORE_DC_003",
+      "target": "AMF_004",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 19,
+        "predicted_latency_ms": 30.469999313354492
+      }
+    },
+    {
+      "source": "FIREWALL_001",
+      "target": "AMF_005",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 24,
+        "predicted_latency_ms": 24.93000030517578
+      }
+    },
+    {
+      "source": "CORE_DC_001",
+      "target": "AMF_006",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 18,
+        "predicted_latency_ms": 20.649999618530273
+      }
+    },
+    {
+      "source": "CORE_DC_003",
+      "target": "AMF_006",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 20,
+        "predicted_latency_ms": 34.56999969482422
+      }
+    },
+    {
+      "source": "CORE_DC_004",
+      "target": "AMF_006",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 17,
+        "predicted_latency_ms": 24.729999542236328
+      }
+    },
+    {
+      "source": "gNB_006",
+      "target": "AMF_008",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 18,
+        "predicted_latency_ms": 25.15999984741211
+      }
+    },
+    {
+      "source": "gNB_011",
+      "target": "AMF_008",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 23,
+        "predicted_latency_ms": 23.68000030517578
+      }
+    },
+    {
+      "source": "gNB_015",
+      "target": "AMF_008",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 19,
+        "predicted_latency_ms": 25.059999465942383
+      }
+    },
+    {
+      "source": "gNB_015",
+      "target": "SMF_001",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 26,
+        "predicted_latency_ms": 35.11000061035156
+      }
+    },
+    {
+      "source": "gNB_015",
+      "target": "SMF_001",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 28,
+        "predicted_latency_ms": 35.11000061035156
+      }
+    },
+    {
+      "source": "SMF_007",
+      "target": "SMF_001",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 28,
+        "predicted_latency_ms": 36.72999954223633
+      }
+    },
+    {
+      "source": "CORE_DC_004",
+      "target": "SMF_001",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 26,
+        "predicted_latency_ms": 31.93000030517578
+      }
+    },
+    {
+      "source": "FIREWALL_004",
+      "target": "SMF_001",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 29,
+        "predicted_latency_ms": 29.489999771118164
+      }
+    },
+    {
+      "source": "gNB_009",
+      "target": "SMF_002",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 24,
+        "predicted_latency_ms": 21.739999771118164
+      }
+    },
+    {
+      "source": "gNB_010",
+      "target": "SMF_002",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 20,
+        "predicted_latency_ms": 18.670000076293945
+      }
+    },
+    {
+      "source": "UPF_003",
+      "target": "SMF_002",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 16,
+        "predicted_latency_ms": 20.520000457763672
+      }
+    },
+    {
+      "source": "UPF_003",
+      "target": "SMF_003",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 24,
+        "predicted_latency_ms": 27.059999465942383
+      }
+    },
+    {
+      "source": "AMF_003",
+      "target": "SMF_003",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 16,
+        "predicted_latency_ms": 26.670000076293945
+      }
+    },
+    {
+      "source": "AMF_004",
+      "target": "SMF_004",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 19,
+        "predicted_latency_ms": 19.809999465942383
+      }
+    },
+    {
+      "source": "SMF_003",
+      "target": "SMF_004",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 22,
+        "predicted_latency_ms": 21.34000015258789
+      }
+    },
+    {
+      "source": "CORE_DC_002",
+      "target": "SMF_004",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 16,
+        "predicted_latency_ms": 17.90999984741211
+      }
+    },
+    {
+      "source": "AMF_008",
+      "target": "SMF_005",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 23,
+        "predicted_latency_ms": 24.989999771118164
+      }
+    },
+    {
+      "source": "SMF_002",
+      "target": "SMF_005",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 18,
+        "predicted_latency_ms": 23.989999771118164
+      }
+    },
+    {
+      "source": "gNB_005",
+      "target": "SMF_006",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 16,
+        "predicted_latency_ms": 24.920000076293945
+      }
+    },
+    {
+      "source": "MONITOR_003",
+      "target": "SMF_007",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 18,
+        "predicted_latency_ms": 27.6200008392334
+      }
+    },
+    {
+      "source": "MONITOR_004",
+      "target": "SMF_007",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 24,
+        "predicted_latency_ms": 35.52000045776367
+      }
+    },
+    {
+      "source": "gNB_010",
+      "target": "EDGE_DC_001",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 24,
+        "predicted_latency_ms": 25.719999313354492
+      }
+    },
+    {
+      "source": "SMF_007",
+      "target": "EDGE_DC_002",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 27,
+        "predicted_latency_ms": 34.04999923706055
+      }
+    },
+    {
+      "source": "CORE_DC_001",
+      "target": "EDGE_DC_002",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 21,
+        "predicted_latency_ms": 24.049999237060547
+      }
+    },
+    {
+      "source": "FIREWALL_002",
+      "target": "EDGE_DC_002",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 24,
+        "predicted_latency_ms": 29.200000762939453
+      }
+    },
+    {
+      "source": "gNB_001",
+      "target": "EDGE_DC_003",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 11,
+        "predicted_latency_ms": 20.690000534057617
+      }
+    },
+    {
+      "source": "gNB_015",
+      "target": "EDGE_DC_003",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 16,
+        "predicted_latency_ms": 22.729999542236328
+      }
+    },
+    {
+      "source": "SMF_003",
+      "target": "EDGE_DC_004",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 25,
+        "predicted_latency_ms": 28.8799991607666
+      }
+    },
+    {
+      "source": "gNB_011",
+      "target": "EDGE_DC_005",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 21,
+        "predicted_latency_ms": 22.780000686645508
+      }
+    },
+    {
+      "source": "UPF_004",
+      "target": "EDGE_DC_005",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 34,
+        "predicted_latency_ms": 29.1200008392334
+      }
+    },
+    {
+      "source": "SMF_001",
+      "target": "EDGE_DC_005",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 25,
+        "predicted_latency_ms": 27.360000610351562
+      }
+    },
+    {
+      "source": "FIREWALL_002",
+      "target": "EDGE_DC_005",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 18,
+        "predicted_latency_ms": 19.100000381469727
+      }
+    },
+    {
+      "source": "MONITOR_005",
+      "target": "EDGE_DC_005",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 24,
+        "predicted_latency_ms": 19.8700008392334
+      }
+    },
+    {
+      "source": "AMF_008",
+      "target": "EDGE_DC_006",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 22,
+        "predicted_latency_ms": 27.809999465942383
+      }
+    },
+    {
+      "source": "EDGE_DC_001",
+      "target": "EDGE_DC_006",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 30,
+        "predicted_latency_ms": 30.860000610351562
+      }
+    },
+    {
+      "source": "gNB_016",
+      "target": "EDGE_DC_007",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 10,
+        "predicted_latency_ms": 13.729999542236328
+      }
+    },
+    {
+      "source": "EDGE_DC_002",
+      "target": "EDGE_DC_007",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 13,
+        "predicted_latency_ms": 23.889999389648438
+      }
+    },
+    {
+      "source": "AMF_006",
+      "target": "EDGE_DC_008",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 17,
+        "predicted_latency_ms": 22.540000915527344
+      }
+    },
+    {
+      "source": "FIREWALL_002",
+      "target": "CORE_DC_001",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 15,
+        "predicted_latency_ms": 16.940000534057617
+      }
+    },
+    {
+      "source": "MONITOR_001",
+      "target": "CORE_DC_001",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 41,
+        "predicted_latency_ms": 35.029998779296875
+      }
+    },
+    {
+      "source": "AMF_002",
+      "target": "CORE_DC_002",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 16,
+        "predicted_latency_ms": 21.559999465942383
+      }
+    },
+    {
+      "source": "EDGE_DC_003",
+      "target": "CORE_DC_002",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 14,
+        "predicted_latency_ms": 17.59000015258789
+      }
+    },
+    {
+      "source": "UPF_005",
+      "target": "CORE_DC_003",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 20,
+        "predicted_latency_ms": 22.639999389648438
+      }
+    },
+    {
+      "source": "UPF_006",
+      "target": "CORE_DC_003",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 23,
+        "predicted_latency_ms": 31.18000030517578
+      }
+    },
+    {
+      "source": "SMF_007",
+      "target": "CORE_DC_003",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 21,
+        "predicted_latency_ms": 35.16999816894531
+      }
+    },
+    {
+      "source": "EDGE_DC_002",
+      "target": "CORE_DC_003",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 24,
+        "predicted_latency_ms": 36.88999938964844
+      }
+    },
+    {
+      "source": "FIREWALL_001",
+      "target": "CORE_DC_003",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 26,
+        "predicted_latency_ms": 32.66999816894531
+      }
+    },
+    {
+      "source": "gNB_008",
+      "target": "CORE_DC_004",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 17,
+        "predicted_latency_ms": 26.40999984741211
+      }
+    },
+    {
+      "source": "CORE_DC_003",
+      "target": "CORE_DC_004",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 18,
+        "predicted_latency_ms": 27.25
+      }
+    },
+    {
+      "source": "MONITOR_003",
+      "target": "CORE_DC_004",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 16,
+        "predicted_latency_ms": 20.889999389648438
+      }
+    },
+    {
+      "source": "gNB_005",
+      "target": "FIREWALL_001",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 22,
+        "predicted_latency_ms": 27.329999923706055
+      }
+    },
+    {
+      "source": "UPF_006",
+      "target": "FIREWALL_001",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 26,
+        "predicted_latency_ms": 29.18000030517578
+      }
+    },
+    {
+      "source": "EDGE_DC_004",
+      "target": "FIREWALL_002",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 23,
+        "predicted_latency_ms": 29.15999984741211
+      }
+    },
+    {
+      "source": "EDGE_DC_006",
+      "target": "FIREWALL_002",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 26,
+        "predicted_latency_ms": 28.760000228881836
+      }
+    },
+    {
+      "source": "UPF_005",
+      "target": "FIREWALL_003",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 17,
+        "predicted_latency_ms": 15.890000343322754
+      }
+    },
+    {
+      "source": "gNB_001",
+      "target": "FIREWALL_004",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 16,
+        "predicted_latency_ms": 21.760000228881836
+      }
+    },
+    {
+      "source": "gNB_017",
+      "target": "FIREWALL_004",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 17,
+        "predicted_latency_ms": 20.1299991607666
+      }
+    },
+    {
+      "source": "SMF_004",
+      "target": "FIREWALL_004",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 15,
+        "predicted_latency_ms": 18.270000457763672
+      }
+    },
+    {
+      "source": "gNB_004",
+      "target": "MONITOR_001",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 1000,
+        "latency_ms": 49,
+        "predicted_latency_ms": 45.720001220703125
+      }
+    },
+    {
+      "source": "SMF_003",
+      "target": "MONITOR_001",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 46,
+        "predicted_latency_ms": 45.20000076293945
+      }
+    },
+    {
+      "source": "gNB_004",
+      "target": "MONITOR_002",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 21,
+        "predicted_latency_ms": 32.16999816894531
+      }
+    },
+    {
+      "source": "AMF_001",
+      "target": "MONITOR_002",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 20,
+        "predicted_latency_ms": 23.290000915527344
+      }
+    },
+    {
+      "source": "FIREWALL_005",
+      "target": "MONITOR_002",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 100,
+        "latency_ms": 23,
+        "predicted_latency_ms": 34.27000045776367
+      }
+    },
+    {
+      "source": "gNB_002",
+      "target": "MONITOR_003",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 12,
+        "predicted_latency_ms": 20.239999771118164
+      }
+    },
+    {
+      "source": "gNB_016",
+      "target": "MONITOR_003",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 12,
+        "predicted_latency_ms": 16.18000030517578
+      }
+    },
+    {
+      "source": "SMF_003",
+      "target": "MONITOR_003",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 18,
+        "predicted_latency_ms": 23.670000076293945
+      }
+    },
+    {
+      "source": "SMF_001",
+      "target": "MONITOR_004",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 50,
+        "latency_ms": 26,
+        "predicted_latency_ms": 36.189998626708984
+      }
+    },
+    {
+      "source": "gNB_013",
+      "target": "MONITOR_005",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 23,
+        "predicted_latency_ms": 20.690000534057617
+      }
+    },
+    {
+      "source": "FIREWALL_001",
+      "target": "MONITOR_005",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 500,
+        "latency_ms": 28,
+        "predicted_latency_ms": 24.579999923706055
+      }
+    }
+  ]
+}
