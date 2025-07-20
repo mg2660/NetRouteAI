@@ -21,3 +21,5 @@ Thumbs.db
 # Environment/config
 .env
 *.pem
+
+csv-data/ 

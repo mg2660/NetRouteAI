@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Network Insights Suite</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    nav {
+      background-color: #333;
+      padding: 12px;
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .content {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="./graph-data/templates/predict_path.html">🔍 Path Predictor</a>
+    <a href="topology-realtime.html">📡 Real-time Topology</a>
+    <a href="predicted-latency.html">⚡ Latency View</a>
+    <a href="predicted-health-status.html">🩺 Health View</a>
+  </nav>
+
+  <div class="content">
+    <!-- This is the shared layout wrapper. Each file (predict.html, etc.) should copy this structure and replace the content below. -->
+    <h2>Welcome</h2>
+    <p>Select a module from the navigation above.</p>
+  </div>
+</body>
+</html>

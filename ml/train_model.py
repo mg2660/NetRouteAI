@@ -6,7 +6,7 @@ from sklearn.metrics import mean_absolute_error, r2_score
 import joblib
 
 # === Load latest N CSV files ===
-NUM_RECENT = 5
+NUM_RECENT = 10
 files = sorted(glob.glob("csv-data/link_data_*.csv"), reverse=True)[:NUM_RECENT]
 df = pd.concat([pd.read_csv(f) for f in files], ignore_index=True)
 

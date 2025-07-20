@@ -4,14 +4,14 @@
       "id": "AMF_004",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.42,
+        "packet_loss_rate": 3.51,
         "alarm_status": "YELLOW",
         "temperature": 97.7,
-        "memory_usage": 71.16,
-        "latency_avg": 25.85,
+        "memory_usage": 56.7,
+        "latency_avg": 58.71,
         "location": "S\u00c3\u00a3o Paulo",
         "id": "AMF_004",
-        "cpu_usage": 15.85,
+        "cpu_usage": 80.84,
         "type": "AMF",
         "status_last_updated": "2025-06-07T06:42:49",
         "uptime_hours": 1902
@@ -24,14 +24,14 @@
       "id": "gNB_001",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.4,
-        "alarm_status": "GREEN",
+        "packet_loss_rate": 1.98,
+        "alarm_status": "YELLOW",
         "temperature": 60.8,
-        "memory_usage": 47.87,
-        "latency_avg": 10.73,
+        "memory_usage": 55.67,
+        "latency_avg": 24.45,
         "location": "Paris",
         "id": "gNB_001",
-        "cpu_usage": 35.23,
+        "cpu_usage": 76.19,
         "type": "gNB",
         "status_last_updated": "2025-05-29T14:57:49",
         "uptime_hours": 503
@@ -44,14 +44,14 @@
       "id": "gNB_012",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.36,
+        "packet_loss_rate": 0.76,
         "alarm_status": "GREEN",
         "temperature": 51.4,
-        "memory_usage": 36.66,
-        "latency_avg": 18.8,
+        "memory_usage": 21.15,
+        "latency_avg": 13.21,
         "location": "Sydney",
         "id": "gNB_012",
-        "cpu_usage": 37.58,
+        "cpu_usage": 22.83,
         "type": "gNB",
         "status_last_updated": "2025-06-11T06:52:49",
         "uptime_hours": 2551
@@ -64,14 +64,14 @@
       "id": "gNB_002",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.29,
+        "packet_loss_rate": 0.66,
         "alarm_status": "GREEN",
         "temperature": 78.5,
-        "memory_usage": 43.27,
-        "latency_avg": 18.43,
+        "memory_usage": 25.92,
+        "latency_avg": 10.56,
         "location": "New York",
         "id": "gNB_002",
-        "cpu_usage": 45.04,
+        "cpu_usage": 36.29,
         "type": "gNB",
         "status_last_updated": "2025-06-17T23:35:49",
         "uptime_hours": 717
@@ -84,14 +84,14 @@
       "id": "FIREWALL_001",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.8,
+        "packet_loss_rate": 1.08,
         "alarm_status": "YELLOW",
         "temperature": 72.5,
-        "memory_usage": 35.99,
-        "latency_avg": 26.16,
+        "memory_usage": 45.82,
+        "latency_avg": 15.09,
         "location": "Paris",
         "id": "FIREWALL_001",
-        "cpu_usage": 45.41,
+        "cpu_usage": 0.19,
         "type": "FIREWALL",
         "status_last_updated": "2025-06-23T02:19:49",
         "uptime_hours": 1702
@@ -104,14 +104,14 @@
       "id": "AMF_002",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.64,
+        "packet_loss_rate": 1.61,
         "alarm_status": "YELLOW",
         "temperature": 88.6,
-        "memory_usage": 62.7,
-        "latency_avg": 28.04,
+        "memory_usage": 22.48,
+        "latency_avg": 24.15,
         "location": "Tokyo",
         "id": "AMF_002",
-        "cpu_usage": 56.18,
+        "cpu_usage": 75.87,
         "type": "AMF",
         "status_last_updated": "2025-06-15T02:57:49",
         "uptime_hours": 4866
@@ -124,14 +124,14 @@
       "id": "gNB_003",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.58,
+        "packet_loss_rate": 1.79,
         "alarm_status": "GREEN",
         "temperature": 58.4,
-        "memory_usage": 45.8,
-        "latency_avg": 24.72,
+        "memory_usage": 49.53,
+        "latency_avg": 29.47,
         "location": "Toronto",
         "id": "gNB_003",
-        "cpu_usage": 30.45,
+        "cpu_usage": 0,
         "type": "gNB",
         "status_last_updated": "2025-06-20T04:05:49",
         "uptime_hours": 729
@@ -144,14 +144,14 @@
       "id": "gNB_004",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.76,
-        "alarm_status": "YELLOW",
+        "packet_loss_rate": 1.19,
+        "alarm_status": "GREEN",
         "temperature": 77.1,
-        "memory_usage": 50.14,
-        "latency_avg": 27.84,
+        "memory_usage": 16.51,
+        "latency_avg": 10.94,
         "location": "Cape Town",
         "id": "gNB_004",
-        "cpu_usage": 36.73,
+        "cpu_usage": 35.15,
         "type": "gNB",
         "status_last_updated": "2025-06-23T17:06:49",
         "uptime_hours": 4317
@@ -164,14 +164,14 @@
       "id": "FIREWALL_005",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 2.16,
-        "alarm_status": "YELLOW",
+        "packet_loss_rate": 1.63,
+        "alarm_status": "GREEN",
         "temperature": 63.5,
-        "memory_usage": 46.77,
-        "latency_avg": 27.29,
+        "memory_usage": 47.64,
+        "latency_avg": 17.11,
         "location": "Paris",
         "id": "FIREWALL_005",
-        "cpu_usage": 34.73,
+        "cpu_usage": 30.79,
         "type": "FIREWALL",
         "status_last_updated": "2025-06-02T22:14:49",
         "uptime_hours": 3799
@@ -184,14 +184,14 @@
       "id": "gNB_005",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.28,
-        "alarm_status": "GREEN",
+        "packet_loss_rate": 0.94,
+        "alarm_status": "YELLOW",
         "temperature": 85.1,
-        "memory_usage": 69.48,
-        "latency_avg": 11.51,
+        "memory_usage": 44.8,
+        "latency_avg": 10.45,
         "location": "Mumbai",
         "id": "gNB_005",
-        "cpu_usage": 21.59,
+        "cpu_usage": 43.12,
         "type": "gNB",
         "status_last_updated": "2025-05-31T18:29:49",
         "uptime_hours": 3591
@@ -204,14 +204,14 @@
       "id": "AMF_001",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.28,
-        "alarm_status": "GREEN",
+        "packet_loss_rate": 1.66,
+        "alarm_status": "YELLOW",
         "temperature": 67.1,
-        "memory_usage": 41.57,
-        "latency_avg": 10.84,
+        "memory_usage": 27.59,
+        "latency_avg": 21.67,
         "location": "Sydney",
         "id": "AMF_001",
-        "cpu_usage": 67.32,
+        "cpu_usage": 84.8,
         "type": "AMF",
         "status_last_updated": "2025-05-29T16:24:49",
         "uptime_hours": 2221
@@ -224,14 +224,14 @@
       "id": "MONITOR_004",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 2.05,
+        "packet_loss_rate": 1.92,
         "alarm_status": "GREEN",
         "temperature": 78.8,
-        "memory_usage": 26.13,
-        "latency_avg": 23.29,
+        "memory_usage": 69.25,
+        "latency_avg": 24.87,
         "location": "London",
         "id": "MONITOR_004",
-        "cpu_usage": 38.4,
+        "cpu_usage": 27.16,
         "type": "MONITOR",
         "status_last_updated": "2025-06-06T15:36:49",
         "uptime_hours": 4623
@@ -244,14 +244,14 @@
       "id": "gNB_009",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.56,
-        "alarm_status": "YELLOW",
+        "packet_loss_rate": 1.74,
+        "alarm_status": "GREEN",
         "temperature": 99.2,
-        "memory_usage": 37.96,
-        "latency_avg": 25.35,
+        "memory_usage": 51.11,
+        "latency_avg": 16.78,
         "location": "S\u00c3\u00a3o Paulo",
         "id": "gNB_009",
-        "cpu_usage": 63.6,
+        "cpu_usage": 39.47,
         "type": "gNB",
         "status_last_updated": "2025-06-10T08:30:49",
         "uptime_hours": 2628
@@ -264,14 +264,14 @@
       "id": "gNB_006",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.91,
+        "packet_loss_rate": 1.82,
         "alarm_status": "YELLOW",
         "temperature": 76.6,
-        "memory_usage": 23.37,
-        "latency_avg": 25.5,
+        "memory_usage": 67.72,
+        "latency_avg": 25.18,
         "location": "New York",
         "id": "gNB_006",
-        "cpu_usage": 49.44,
+        "cpu_usage": 78.14,
         "type": "gNB",
         "status_last_updated": "2025-06-09T07:24:49",
         "uptime_hours": 4020
@@ -284,14 +284,14 @@
       "id": "gNB_007",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 0.98,
+        "packet_loss_rate": 1.18,
         "alarm_status": "GREEN",
         "temperature": 50.8,
-        "memory_usage": 59.07,
-        "latency_avg": 12.45,
+        "memory_usage": 41.28,
+        "latency_avg": 20.29,
         "location": "Toronto",
         "id": "gNB_007",
-        "cpu_usage": 17.48,
+        "cpu_usage": 52.71,
         "type": "gNB",
         "status_last_updated": "2025-06-12T13:57:49",
         "uptime_hours": 2729
@@ -304,14 +304,14 @@
       "id": "UPF_001",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.82,
-        "alarm_status": "YELLOW",
+        "packet_loss_rate": 1.15,
+        "alarm_status": "GREEN",
         "temperature": 78,
-        "memory_usage": 56.21,
-        "latency_avg": 29.85,
+        "memory_usage": 40.9,
+        "latency_avg": 11.15,
         "location": "Paris",
         "id": "UPF_001",
-        "cpu_usage": 39.35,
+        "cpu_usage": 24.92,
         "type": "UPF",
         "status_last_updated": "2025-06-11T11:57:49",
         "uptime_hours": 4907
@@ -324,14 +324,14 @@
       "id": "gNB_008",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 2.07,
+        "packet_loss_rate": 1.42,
         "alarm_status": "GREEN",
         "temperature": 66.6,
-        "memory_usage": 40.86,
-        "latency_avg": 24.33,
+        "memory_usage": 31.09,
+        "latency_avg": 20.09,
         "location": "Toronto",
         "id": "gNB_008",
-        "cpu_usage": 28.38,
+        "cpu_usage": 61.22,
         "type": "gNB",
         "status_last_updated": "2025-06-13T08:19:49",
         "uptime_hours": 3649
@@ -344,14 +344,14 @@
       "id": "MONITOR_003",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.18,
-        "alarm_status": "GREEN",
+        "packet_loss_rate": 1.74,
+        "alarm_status": "YELLOW",
         "temperature": 64.3,
-        "memory_usage": 36.92,
-        "latency_avg": 16.31,
+        "memory_usage": 45.49,
+        "latency_avg": 15.16,
         "location": "S\u00c3\u00a3o Paulo",
         "id": "MONITOR_003",
-        "cpu_usage": 33.69,
+        "cpu_usage": 87.26,
         "type": "MONITOR",
         "status_last_updated": "2025-06-25T15:12:49",
         "uptime_hours": 2646
@@ -364,14 +364,14 @@
       "id": "EDGE_DC_004",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.76,
+        "packet_loss_rate": 2.28,
         "alarm_status": "GREEN",
         "temperature": 58.3,
-        "memory_usage": 71.44,
-        "latency_avg": 22.84,
+        "memory_usage": 59.74,
+        "latency_avg": 25.57,
         "location": "Paris",
         "id": "EDGE_DC_004",
-        "cpu_usage": 53.5,
+        "cpu_usage": 46.88,
         "type": "EDGE_DC",
         "status_last_updated": "2025-06-05T09:38:49",
         "uptime_hours": 4063
@@ -384,14 +384,14 @@
       "id": "EDGE_DC_006",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.74,
-        "alarm_status": "YELLOW",
+        "packet_loss_rate": 1.64,
+        "alarm_status": "GREEN",
         "temperature": 59.7,
-        "memory_usage": 63.81,
-        "latency_avg": 33.32,
+        "memory_usage": 24.85,
+        "latency_avg": 22.99,
         "location": "New York",
         "id": "EDGE_DC_006",
-        "cpu_usage": 42.8,
+        "cpu_usage": 40.94,
         "type": "EDGE_DC",
         "status_last_updated": "2025-06-03T19:48:49",
         "uptime_hours": 986
@@ -404,14 +404,14 @@
       "id": "AMF_007",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.33,
-        "alarm_status": "GREEN",
+        "packet_loss_rate": 1.13,
+        "alarm_status": "YELLOW",
         "temperature": 99,
-        "memory_usage": 60.31,
-        "latency_avg": 11.01,
+        "memory_usage": 43.13,
+        "latency_avg": 14.08,
         "location": "New York",
         "id": "AMF_007",
-        "cpu_usage": 41.83,
+        "cpu_usage": 36.7,
         "type": "AMF",
         "status_last_updated": "2025-06-16T16:46:49",
         "uptime_hours": 1072
@@ -424,14 +424,14 @@
       "id": "gNB_010",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.01,
+        "packet_loss_rate": 0.98,
         "alarm_status": "GREEN",
         "temperature": 98.2,
-        "memory_usage": 28.67,
-        "latency_avg": 19.14,
+        "memory_usage": 30.52,
+        "latency_avg": 13.18,
         "location": "Toronto",
         "id": "gNB_010",
-        "cpu_usage": 56.39,
+        "cpu_usage": 29.04,
         "type": "gNB",
         "status_last_updated": "2025-06-01T22:47:49",
         "uptime_hours": 4086
@@ -444,14 +444,14 @@
       "id": "gNB_013",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.26,
+        "packet_loss_rate": 1.38,
         "alarm_status": "GREEN",
         "temperature": 51.1,
-        "memory_usage": 34.42,
-        "latency_avg": 19.54,
+        "memory_usage": 21.1,
+        "latency_avg": 24.3,
         "location": "Cape Town",
         "id": "gNB_013",
-        "cpu_usage": 16.56,
+        "cpu_usage": 18.18,
         "type": "gNB",
         "status_last_updated": "2025-06-15T17:21:49",
         "uptime_hours": 1160
@@ -464,14 +464,14 @@
       "id": "SMF_003",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.71,
-        "alarm_status": "YELLOW",
+        "packet_loss_rate": 1.28,
+        "alarm_status": "GREEN",
         "temperature": 70.1,
-        "memory_usage": 63.56,
-        "latency_avg": 28.69,
+        "memory_usage": 29.99,
+        "latency_avg": 11.31,
         "location": "Sydney",
         "id": "SMF_003",
-        "cpu_usage": 25.44,
+        "cpu_usage": 0.08,
         "type": "SMF",
         "status_last_updated": "2025-06-04T04:10:49",
         "uptime_hours": 1050
@@ -484,14 +484,14 @@
       "id": "CORE_DC_003",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 2.11,
-        "alarm_status": "GREEN",
+        "packet_loss_rate": 1.59,
+        "alarm_status": "YELLOW",
         "temperature": 90,
-        "memory_usage": 47.12,
-        "latency_avg": 23.67,
+        "memory_usage": 56.42,
+        "latency_avg": 18.23,
         "location": "Sydney",
         "id": "CORE_DC_003",
-        "cpu_usage": 29.01,
+        "cpu_usage": 82.56,
         "type": "CORE_DC",
         "status_last_updated": "2025-06-19T17:59:49",
         "uptime_hours": 3274
@@ -504,14 +504,14 @@
       "id": "gNB_014",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.59,
+        "packet_loss_rate": 1.23,
         "alarm_status": "GREEN",
         "temperature": 64.4,
-        "memory_usage": 50.49,
-        "latency_avg": 12.99,
+        "memory_usage": 17.7,
+        "latency_avg": 18.16,
         "location": "S\u00c3\u00a3o Paulo",
         "id": "gNB_014",
-        "cpu_usage": 24.08,
+        "cpu_usage": 40.82,
         "type": "gNB",
         "status_last_updated": "2025-06-19T02:55:49",
         "uptime_hours": 2816
@@ -524,14 +524,14 @@
       "id": "UPF_010",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.27,
+        "packet_loss_rate": 2.22,
         "alarm_status": "GREEN",
         "temperature": 65.7,
-        "memory_usage": 65.37,
-        "latency_avg": 12.62,
+        "memory_usage": 15.97,
+        "latency_avg": 29.3,
         "location": "London",
         "id": "UPF_010",
-        "cpu_usage": 55.64,
+        "cpu_usage": 30.19,
         "type": "UPF",
         "status_last_updated": "2025-06-02T05:08:49",
         "uptime_hours": 1955
@@ -544,14 +544,14 @@
       "id": "gNB_015",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.84,
-        "alarm_status": "GREEN",
+        "packet_loss_rate": 0.84,
+        "alarm_status": "YELLOW",
         "temperature": 71.8,
-        "memory_usage": 39.32,
-        "latency_avg": 17.66,
+        "memory_usage": 47.16,
+        "latency_avg": 11.1,
         "location": "London",
         "id": "gNB_015",
-        "cpu_usage": 29.99,
+        "cpu_usage": 78.12,
         "type": "gNB",
         "status_last_updated": "2025-06-04T19:11:49",
         "uptime_hours": 4321
@@ -564,14 +564,14 @@
       "id": "gNB_017",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.3,
-        "alarm_status": "GREEN",
+        "packet_loss_rate": 0.93,
+        "alarm_status": "YELLOW",
         "temperature": 70.7,
-        "memory_usage": 58.37,
-        "latency_avg": 11.15,
+        "memory_usage": 29.95,
+        "latency_avg": 15.52,
         "location": "Paris",
         "id": "gNB_017",
-        "cpu_usage": 68.12,
+        "cpu_usage": 30.35,
         "type": "gNB",
         "status_last_updated": "2025-06-20T09:53:49",
         "uptime_hours": 608
@@ -584,14 +584,14 @@
       "id": "AMF_003",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.19,
+        "packet_loss_rate": 1.38,
         "alarm_status": "GREEN",
         "temperature": 60.3,
-        "memory_usage": 52.24,
-        "latency_avg": 12.08,
+        "memory_usage": 67.16,
+        "latency_avg": 18.89,
         "location": "Sydney",
         "id": "AMF_003",
-        "cpu_usage": 49.74,
+        "cpu_usage": 26.79,
         "type": "AMF",
         "status_last_updated": "2025-06-05T11:40:49",
         "uptime_hours": 2825
@@ -604,14 +604,14 @@
       "id": "gNB_016",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 0.7,
-        "alarm_status": "GREEN",
+        "packet_loss_rate": 1.46,
+        "alarm_status": "YELLOW",
         "temperature": 85.3,
-        "memory_usage": 46.18,
-        "latency_avg": 13.04,
+        "memory_usage": 43.24,
+        "latency_avg": 27.03,
         "location": "Tokyo",
         "id": "gNB_016",
-        "cpu_usage": 42.25,
+        "cpu_usage": 80.57,
         "type": "gNB",
         "status_last_updated": "2025-06-07T20:34:49",
         "uptime_hours": 3404
@@ -624,14 +624,14 @@
       "id": "AMF_008",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.42,
-        "alarm_status": "GREEN",
+        "packet_loss_rate": 3.78,
+        "alarm_status": "YELLOW",
         "temperature": 59.8,
-        "memory_usage": 28.93,
-        "latency_avg": 17.54,
+        "memory_usage": 59.54,
+        "latency_avg": 59.94,
         "location": "Toronto",
         "id": "AMF_008",
-        "cpu_usage": 29.82,
+        "cpu_usage": 75.5,
         "type": "AMF",
         "status_last_updated": "2025-06-23T14:48:49",
         "uptime_hours": 4504
@@ -644,14 +644,14 @@
       "id": "gNB_018",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.26,
+        "packet_loss_rate": 1.06,
         "alarm_status": "GREEN",
         "temperature": 64.3,
-        "memory_usage": 24.52,
-        "latency_avg": 21.87,
+        "memory_usage": 64.57,
+        "latency_avg": 16.67,
         "location": "Cape Town",
         "id": "gNB_018",
-        "cpu_usage": 23.34,
+        "cpu_usage": 57.49,
         "type": "gNB",
         "status_last_updated": "2025-06-01T20:01:49",
         "uptime_hours": 3902
@@ -664,14 +664,14 @@
       "id": "UPF_003",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.18,
-        "alarm_status": "GREEN",
+        "packet_loss_rate": 1.06,
+        "alarm_status": "YELLOW",
         "temperature": 86.5,
-        "memory_usage": 62,
-        "latency_avg": 19.43,
+        "memory_usage": 53.29,
+        "latency_avg": 10.33,
         "location": "Toronto",
         "id": "UPF_003",
-        "cpu_usage": 27.82,
+        "cpu_usage": 81.44,
         "type": "UPF",
         "status_last_updated": "2025-06-07T04:13:49",
         "uptime_hours": 4170
@@ -684,14 +684,14 @@
       "id": "SMF_002",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.15,
+        "packet_loss_rate": 1.62,
         "alarm_status": "GREEN",
         "temperature": 96.9,
-        "memory_usage": 45.27,
-        "latency_avg": 18.99,
+        "memory_usage": 39.03,
+        "latency_avg": 19.43,
         "location": "Cape Town",
         "id": "SMF_002",
-        "cpu_usage": 47.98,
+        "cpu_usage": 21.51,
         "type": "SMF",
         "status_last_updated": "2025-06-09T09:39:49",
         "uptime_hours": 501
@@ -704,14 +704,14 @@
       "id": "gNB_020",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.9,
-        "alarm_status": "GREEN",
+        "packet_loss_rate": 0.86,
+        "alarm_status": "YELLOW",
         "temperature": 84.7,
-        "memory_usage": 52.86,
-        "latency_avg": 24.48,
+        "memory_usage": 49.05,
+        "latency_avg": 16.3,
         "location": "New York",
         "id": "gNB_020",
-        "cpu_usage": 28.46,
+        "cpu_usage": 51.26,
         "type": "gNB",
         "status_last_updated": "2025-06-11T03:25:49",
         "uptime_hours": 2775
@@ -724,14 +724,14 @@
       "id": "gNB_019",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.45,
-        "alarm_status": "GREEN",
+        "packet_loss_rate": 1.22,
+        "alarm_status": "YELLOW",
         "temperature": 77.1,
-        "memory_usage": 32.58,
-        "latency_avg": 17.31,
+        "memory_usage": 49.13,
+        "latency_avg": 11.86,
         "location": "Sydney",
         "id": "gNB_019",
-        "cpu_usage": 61.36,
+        "cpu_usage": 73.42,
         "type": "gNB",
         "status_last_updated": "2025-06-13T09:56:49",
         "uptime_hours": 4268
@@ -744,14 +744,14 @@
       "id": "UPF_002",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.31,
+        "packet_loss_rate": 1.59,
         "alarm_status": "GREEN",
         "temperature": 82,
-        "memory_usage": 19.57,
-        "latency_avg": 15.37,
+        "memory_usage": 37.42,
+        "latency_avg": 22.07,
         "location": "Cape Town",
         "id": "UPF_002",
-        "cpu_usage": 51.8,
+        "cpu_usage": 31.89,
         "type": "UPF",
         "status_last_updated": "2025-06-14T20:48:49",
         "uptime_hours": 1479
@@ -764,14 +764,14 @@
       "id": "EDGE_DC_003",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 0.94,
+        "packet_loss_rate": 1.85,
         "alarm_status": "GREEN",
         "temperature": 76.5,
-        "memory_usage": 40.77,
-        "latency_avg": 16.1,
+        "memory_usage": 65.82,
+        "latency_avg": 27.64,
         "location": "Paris",
         "id": "EDGE_DC_003",
-        "cpu_usage": 63.41,
+        "cpu_usage": 6.29,
         "type": "EDGE_DC",
         "status_last_updated": "2025-05-29T08:53:49",
         "uptime_hours": 624
@@ -784,14 +784,14 @@
       "id": "EDGE_DC_005",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.15,
+        "packet_loss_rate": 1.58,
         "alarm_status": "GREEN",
         "temperature": 64.1,
-        "memory_usage": 41.45,
-        "latency_avg": 14.78,
+        "memory_usage": 30.1,
+        "latency_avg": 13.99,
         "location": "Mumbai",
         "id": "EDGE_DC_005",
-        "cpu_usage": 68.09,
+        "cpu_usage": 39.56,
         "type": "EDGE_DC",
         "status_last_updated": "2025-06-05T15:57:49",
         "uptime_hours": 2701
@@ -804,14 +804,14 @@
       "id": "MONITOR_002",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 2,
+        "packet_loss_rate": 1.53,
         "alarm_status": "GREEN",
         "temperature": 97.3,
-        "memory_usage": 55.52,
-        "latency_avg": 21.36,
+        "memory_usage": 40.05,
+        "latency_avg": 28.45,
         "location": "Paris",
         "id": "MONITOR_002",
-        "cpu_usage": 17.15,
+        "cpu_usage": 44.74,
         "type": "MONITOR",
         "status_last_updated": "2025-05-30T16:27:49",
         "uptime_hours": 1383
@@ -824,14 +824,14 @@
       "id": "UPF_004",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 2.74,
-        "alarm_status": "RED",
+        "packet_loss_rate": 1.92,
+        "alarm_status": "YELLOW",
         "temperature": 89.4,
-        "memory_usage": 20.44,
-        "latency_avg": 53.95,
+        "memory_usage": 67.57,
+        "latency_avg": 24.94,
         "location": "Berlin",
         "id": "UPF_004",
-        "cpu_usage": 51.44,
+        "cpu_usage": 28.71,
         "type": "UPF",
         "status_last_updated": "2025-06-09T00:29:49",
         "uptime_hours": 2538
@@ -844,14 +844,14 @@
       "id": "UPF_008",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.02,
-        "alarm_status": "GREEN",
+        "packet_loss_rate": 1.26,
+        "alarm_status": "YELLOW",
         "temperature": 83.1,
-        "memory_usage": 36.68,
-        "latency_avg": 10.65,
+        "memory_usage": 65.79,
+        "latency_avg": 24.3,
         "location": "Berlin",
         "id": "UPF_008",
-        "cpu_usage": 51.59,
+        "cpu_usage": 12.4,
         "type": "UPF",
         "status_last_updated": "2025-06-22T15:08:49",
         "uptime_hours": 4004
@@ -864,14 +864,14 @@
       "id": "UPF_005",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 0.74,
+        "packet_loss_rate": 1.15,
         "alarm_status": "GREEN",
         "temperature": 84.1,
-        "memory_usage": 41.5,
-        "latency_avg": 14.85,
+        "memory_usage": 26.8,
+        "latency_avg": 18.96,
         "location": "Mumbai",
         "id": "UPF_005",
-        "cpu_usage": 50.88,
+        "cpu_usage": 58.92,
         "type": "UPF",
         "status_last_updated": "2025-06-08T15:32:49",
         "uptime_hours": 3826
@@ -884,14 +884,14 @@
       "id": "UPF_006",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.57,
+        "packet_loss_rate": 1.41,
         "alarm_status": "GREEN",
         "temperature": 78.6,
-        "memory_usage": 50.83,
-        "latency_avg": 22.17,
+        "memory_usage": 53.19,
+        "latency_avg": 21.23,
         "location": "Mumbai",
         "id": "UPF_006",
-        "cpu_usage": 55.4,
+        "cpu_usage": 56.29,
         "type": "UPF",
         "status_last_updated": "2025-06-02T07:05:49",
         "uptime_hours": 2171
@@ -904,14 +904,14 @@
       "id": "SMF_006",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.85,
+        "packet_loss_rate": 1.13,
         "alarm_status": "GREEN",
         "temperature": 85.5,
-        "memory_usage": 35.87,
-        "latency_avg": 18.22,
+        "memory_usage": 47.24,
+        "latency_avg": 18.75,
         "location": "Mumbai",
         "id": "SMF_006",
-        "cpu_usage": 58.73,
+        "cpu_usage": 14.43,
         "type": "SMF",
         "status_last_updated": "2025-06-22T01:25:49",
         "uptime_hours": 4805
@@ -924,14 +924,14 @@
       "id": "SMF_007",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.89,
-        "alarm_status": "YELLOW",
+        "packet_loss_rate": 1.07,
+        "alarm_status": "GREEN",
         "temperature": 92.7,
-        "memory_usage": 65.68,
-        "latency_avg": 26.06,
+        "memory_usage": 59.93,
+        "latency_avg": 16.21,
         "location": "Paris",
         "id": "SMF_007",
-        "cpu_usage": 21.81,
+        "cpu_usage": 0.04,
         "type": "SMF",
         "status_last_updated": "2025-06-06T10:50:49",
         "uptime_hours": 1275
@@ -944,14 +944,14 @@
       "id": "UPF_009",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 2.08,
-        "alarm_status": "GREEN",
+        "packet_loss_rate": 1.79,
+        "alarm_status": "YELLOW",
         "temperature": 87.5,
-        "memory_usage": 63.18,
-        "latency_avg": 24.48,
+        "memory_usage": 59.83,
+        "latency_avg": 17.85,
         "location": "Mumbai",
         "id": "UPF_009",
-        "cpu_usage": 49.57,
+        "cpu_usage": 86.8,
         "type": "UPF",
         "status_last_updated": "2025-06-20T13:41:49",
         "uptime_hours": 2698
@@ -964,14 +964,14 @@
       "id": "UPF_007",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.84,
+        "packet_loss_rate": 1.37,
         "alarm_status": "GREEN",
         "temperature": 95.4,
-        "memory_usage": 27.92,
-        "latency_avg": 24.97,
+        "memory_usage": 23.79,
+        "latency_avg": 20.12,
         "location": "Toronto",
         "id": "UPF_007",
-        "cpu_usage": 33.22,
+        "cpu_usage": 0.1,
         "type": "UPF",
         "status_last_updated": "2025-05-28T10:22:49",
         "uptime_hours": 935
@@ -984,14 +984,14 @@
       "id": "AMF_005",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.48,
+        "packet_loss_rate": 1.52,
         "alarm_status": "GREEN",
         "temperature": 89.5,
-        "memory_usage": 35.11,
-        "latency_avg": 24.04,
+        "memory_usage": 27.75,
+        "latency_avg": 17.11,
         "location": "London",
         "id": "AMF_005",
-        "cpu_usage": 66.3,
+        "cpu_usage": 49.79,
         "type": "AMF",
         "status_last_updated": "2025-05-31T02:09:49",
         "uptime_hours": 1421
@@ -1004,14 +1004,14 @@
       "id": "CORE_DC_001",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 0.56,
+        "packet_loss_rate": 1.5,
         "alarm_status": "GREEN",
         "temperature": 73.5,
-        "memory_usage": 18.55,
-        "latency_avg": 11.24,
+        "memory_usage": 42.24,
+        "latency_avg": 10.89,
         "location": "Cape Town",
         "id": "CORE_DC_001",
-        "cpu_usage": 23.87,
+        "cpu_usage": 0.09,
         "type": "CORE_DC",
         "status_last_updated": "2025-06-24T01:33:49",
         "uptime_hours": 4363
@@ -1024,14 +1024,14 @@
       "id": "AMF_006",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.91,
-        "alarm_status": "GREEN",
+        "packet_loss_rate": 3.9,
+        "alarm_status": "YELLOW",
         "temperature": 92.5,
-        "memory_usage": 38.31,
-        "latency_avg": 23.49,
+        "memory_usage": 31.11,
+        "latency_avg": 69.81,
         "location": "Mumbai",
         "id": "AMF_006",
-        "cpu_usage": 49.44,
+        "cpu_usage": 37.42,
         "type": "AMF",
         "status_last_updated": "2025-06-04T05:43:49",
         "uptime_hours": 4126
@@ -1044,14 +1044,14 @@
       "id": "CORE_DC_004",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.29,
+        "packet_loss_rate": 1.53,
         "alarm_status": "GREEN",
         "temperature": 66.8,
-        "memory_usage": 42.61,
-        "latency_avg": 19.05,
+        "memory_usage": 66.67,
+        "latency_avg": 12.9,
         "location": "Tokyo",
         "id": "CORE_DC_004",
-        "cpu_usage": 38.13,
+        "cpu_usage": 14.95,
         "type": "CORE_DC",
         "status_last_updated": "2025-06-24T00:43:49",
         "uptime_hours": 305
@@ -1064,14 +1064,14 @@
       "id": "gNB_011",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.72,
-        "alarm_status": "YELLOW",
+        "packet_loss_rate": 1.27,
+        "alarm_status": "GREEN",
         "temperature": 76.2,
-        "memory_usage": 66.11,
-        "latency_avg": 26.21,
+        "memory_usage": 68.51,
+        "latency_avg": 11.32,
         "location": "Cape Town",
         "id": "gNB_011",
-        "cpu_usage": 63.77,
+        "cpu_usage": 55.57,
         "type": "gNB",
         "status_last_updated": "2025-06-14T19:19:49",
         "uptime_hours": 1784
@@ -1084,14 +1084,14 @@
       "id": "SMF_001",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 2.32,
-        "alarm_status": "YELLOW",
+        "packet_loss_rate": 1.49,
+        "alarm_status": "GREEN",
         "temperature": 93.7,
-        "memory_usage": 34.83,
-        "latency_avg": 29.82,
+        "memory_usage": 39.1,
+        "latency_avg": 14.61,
         "location": "Berlin",
         "id": "SMF_001",
-        "cpu_usage": 22.02,
+        "cpu_usage": 25.86,
         "type": "SMF",
         "status_last_updated": "2025-06-09T11:15:49",
         "uptime_hours": 1928
@@ -1104,14 +1104,14 @@
       "id": "FIREWALL_004",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.02,
-        "alarm_status": "GREEN",
+        "packet_loss_rate": 1.4,
+        "alarm_status": "YELLOW",
         "temperature": 52.8,
-        "memory_usage": 68.51,
-        "latency_avg": 18.75,
+        "memory_usage": 35.72,
+        "latency_avg": 26.83,
         "location": "S\u00c3\u00a3o Paulo",
         "id": "FIREWALL_004",
-        "cpu_usage": 35.92,
+        "cpu_usage": 82.88,
         "type": "FIREWALL",
         "status_last_updated": "2025-06-10T07:57:49",
         "uptime_hours": 2068
@@ -1124,14 +1124,14 @@
       "id": "SMF_004",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 0.95,
+        "packet_loss_rate": 1.82,
         "alarm_status": "GREEN",
         "temperature": 90.6,
-        "memory_usage": 45.11,
-        "latency_avg": 15.45,
+        "memory_usage": 34.73,
+        "latency_avg": 27.8,
         "location": "Berlin",
         "id": "SMF_004",
-        "cpu_usage": 57.46,
+        "cpu_usage": 26.68,
         "type": "SMF",
         "status_last_updated": "2025-06-26T01:28:49",
         "uptime_hours": 420
@@ -1143,15 +1143,15 @@
     {
       "id": "CORE_DC_002",
       "properties": {
-        "is_overloaded": false,
-        "packet_loss_rate": 1.04,
-        "alarm_status": "GREEN",
+        "is_overloaded": true,
+        "packet_loss_rate": 1.4,
+        "alarm_status": "RED",
         "temperature": 56.3,
-        "memory_usage": 51.3,
-        "latency_avg": 10.42,
+        "memory_usage": 25.11,
+        "latency_avg": 21.84,
         "location": "Cape Town",
         "id": "CORE_DC_002",
-        "cpu_usage": 16.68,
+        "cpu_usage": 91.22,
         "type": "CORE_DC",
         "status_last_updated": "2025-05-29T22:47:49",
         "uptime_hours": 809
@@ -1164,14 +1164,14 @@
       "id": "SMF_005",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.85,
+        "packet_loss_rate": 1.96,
         "alarm_status": "GREEN",
         "temperature": 68.7,
-        "memory_usage": 45.57,
-        "latency_avg": 19.98,
+        "memory_usage": 41.23,
+        "latency_avg": 23.56,
         "location": "Tokyo",
         "id": "SMF_005",
-        "cpu_usage": 20.91,
+        "cpu_usage": 34.75,
         "type": "SMF",
         "status_last_updated": "2025-06-13T09:12:49",
         "uptime_hours": 59
@@ -1184,14 +1184,14 @@
       "id": "EDGE_DC_001",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.81,
-        "alarm_status": "YELLOW",
+        "packet_loss_rate": 1.45,
+        "alarm_status": "GREEN",
         "temperature": 99.2,
-        "memory_usage": 52.13,
-        "latency_avg": 34.94,
+        "memory_usage": 27.82,
+        "latency_avg": 18.37,
         "location": "Berlin",
         "id": "EDGE_DC_001",
-        "cpu_usage": 31.12,
+        "cpu_usage": 45.39,
         "type": "EDGE_DC",
         "status_last_updated": "2025-06-18T10:04:49",
         "uptime_hours": 3849
@@ -1204,14 +1204,14 @@
       "id": "EDGE_DC_002",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 2.11,
-        "alarm_status": "YELLOW",
+        "packet_loss_rate": 1.11,
+        "alarm_status": "GREEN",
         "temperature": 51.1,
-        "memory_usage": 50.5,
-        "latency_avg": 25.58,
+        "memory_usage": 35.32,
+        "latency_avg": 12.47,
         "location": "Berlin",
         "id": "EDGE_DC_002",
-        "cpu_usage": 39.4,
+        "cpu_usage": 1.01,
         "type": "EDGE_DC",
         "status_last_updated": "2025-06-12T08:56:49",
         "uptime_hours": 2301
@@ -1224,14 +1224,14 @@
       "id": "FIREWALL_002",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.45,
-        "alarm_status": "YELLOW",
+        "packet_loss_rate": 0.68,
+        "alarm_status": "GREEN",
         "temperature": 73.8,
-        "memory_usage": 64.35,
-        "latency_avg": 27.1,
+        "memory_usage": 71.29,
+        "latency_avg": 11.04,
         "location": "Toronto",
         "id": "FIREWALL_002",
-        "cpu_usage": 66.29,
+        "cpu_usage": 70.33,
         "type": "FIREWALL",
         "status_last_updated": "2025-06-10T19:16:49",
         "uptime_hours": 525
@@ -1244,14 +1244,14 @@
       "id": "MONITOR_005",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.44,
+        "packet_loss_rate": 1.37,
         "alarm_status": "YELLOW",
         "temperature": 88.3,
-        "memory_usage": 41.89,
-        "latency_avg": 24.88,
+        "memory_usage": 43.35,
+        "latency_avg": 15.36,
         "location": "Paris",
         "id": "MONITOR_005",
-        "cpu_usage": 70.54,
+        "cpu_usage": 20.06,
         "type": "MONITOR",
         "status_last_updated": "2025-06-22T19:07:49",
         "uptime_hours": 1778
@@ -1264,14 +1264,14 @@
       "id": "EDGE_DC_007",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 0.88,
+        "packet_loss_rate": 0.87,
         "alarm_status": "GREEN",
         "temperature": 82.1,
-        "memory_usage": 62.32,
-        "latency_avg": 11.98,
+        "memory_usage": 25.62,
+        "latency_avg": 15.4,
         "location": "S\u00c3\u00a3o Paulo",
         "id": "EDGE_DC_007",
-        "cpu_usage": 43.59,
+        "cpu_usage": 47.22,
         "type": "EDGE_DC",
         "status_last_updated": "2025-06-16T17:24:49",
         "uptime_hours": 2348
@@ -1284,14 +1284,14 @@
       "id": "EDGE_DC_008",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 0.86,
-        "alarm_status": "GREEN",
+        "packet_loss_rate": 4.31,
+        "alarm_status": "YELLOW",
         "temperature": 81.4,
-        "memory_usage": 32.58,
-        "latency_avg": 10.3,
+        "memory_usage": 18.95,
+        "latency_avg": 68.82,
         "location": "Berlin",
         "id": "EDGE_DC_008",
-        "cpu_usage": 18.43,
+        "cpu_usage": 27.2,
         "type": "EDGE_DC",
         "status_last_updated": "2025-06-20T04:21:49",
         "uptime_hours": 3254
@@ -1304,14 +1304,14 @@
       "id": "MONITOR_001",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 3.77,
-        "alarm_status": "RED",
+        "packet_loss_rate": 1.68,
+        "alarm_status": "GREEN",
         "temperature": 75.8,
-        "memory_usage": 59.86,
-        "latency_avg": 62.18,
+        "memory_usage": 69,
+        "latency_avg": 22.05,
         "location": "New York",
         "id": "MONITOR_001",
-        "cpu_usage": 30.25,
+        "cpu_usage": 50.03,
         "type": "MONITOR",
         "status_last_updated": "2025-06-02T19:22:49",
         "uptime_hours": 2433
@@ -1324,14 +1324,14 @@
       "id": "FIREWALL_003",
       "properties": {
         "is_overloaded": false,
-        "packet_loss_rate": 1.15,
+        "packet_loss_rate": 1.96,
         "alarm_status": "GREEN",
         "temperature": 57,
-        "memory_usage": 41.74,
-        "latency_avg": 13.57,
+        "memory_usage": 40.99,
+        "latency_avg": 21.79,
         "location": "Paris",
         "id": "FIREWALL_003",
-        "cpu_usage": 40.85,
+        "cpu_usage": 37.64,
         "type": "FIREWALL",
         "status_last_updated": "2025-06-10T15:02:49",
         "uptime_hours": 2033
@@ -1348,8 +1348,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 50,
-        "latency_ms": 19,
-        "predicted_latency_ms": 22.950000762939453
+        "latency_ms": 45,
+        "predicted_latency_ms": 60.90999984741211
       }
     },
     {
@@ -1358,8 +1358,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 50,
-        "latency_ms": 17,
-        "predicted_latency_ms": 21.0
+        "latency_ms": 9,
+        "predicted_latency_ms": 15.859999656677246
       }
     },
     {
@@ -1368,8 +1368,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 500,
-        "latency_ms": 20,
-        "predicted_latency_ms": 24.290000915527344
+        "latency_ms": 15,
+        "predicted_latency_ms": 18.81999969482422
       }
     },
     {
@@ -1377,9 +1377,9 @@
       "target": "gNB_002",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 200,
-        "latency_ms": 17,
-        "predicted_latency_ms": 24.290000915527344
+        "bandwidth_mbps": 500,
+        "latency_ms": 7,
+        "predicted_latency_ms": 18.81999969482422
       }
     },
     {
@@ -1387,9 +1387,9 @@
       "target": "gNB_003",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 27,
-        "predicted_latency_ms": 25.18000030517578
+        "bandwidth_mbps": 1000,
+        "latency_ms": 30,
+        "predicted_latency_ms": 35.45000076293945
       }
     },
     {
@@ -1397,9 +1397,9 @@
       "target": "gNB_004",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 200,
-        "latency_ms": 28,
-        "predicted_latency_ms": 30.969999313354492
+        "bandwidth_mbps": 1000,
+        "latency_ms": 15,
+        "predicted_latency_ms": 18.530000686645508
       }
     },
     {
@@ -1407,9 +1407,9 @@
       "target": "gNB_004",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 27,
-        "predicted_latency_ms": 32.83000183105469
+        "bandwidth_mbps": 100,
+        "latency_ms": 10,
+        "predicted_latency_ms": 21.920000076293945
       }
     },
     {
@@ -1417,9 +1417,9 @@
       "target": "gNB_005",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
+        "bandwidth_mbps": 200,
         "latency_ms": 13,
-        "predicted_latency_ms": 21.780000686645508
+        "predicted_latency_ms": 17.920000076293945
       }
     },
     {
@@ -1427,9 +1427,9 @@
       "target": "gNB_005",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 7,
-        "predicted_latency_ms": 20.649999618530273
+        "bandwidth_mbps": 500,
+        "latency_ms": 16,
+        "predicted_latency_ms": 23.309999465942383
       }
     },
     {
@@ -1437,9 +1437,9 @@
       "target": "gNB_005",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 100,
-        "latency_ms": 13,
-        "predicted_latency_ms": 26.469999313354492
+        "bandwidth_mbps": 500,
+        "latency_ms": 18,
+        "predicted_latency_ms": 27.690000534057617
       }
     },
     {
@@ -1447,9 +1447,9 @@
       "target": "gNB_006",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 23,
-        "predicted_latency_ms": 28.770000457763672
+        "bandwidth_mbps": 100,
+        "latency_ms": 16,
+        "predicted_latency_ms": 47.11000061035156
       }
     },
     {
@@ -1457,9 +1457,9 @@
       "target": "gNB_007",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 17,
-        "predicted_latency_ms": 23.489999771118164
+        "bandwidth_mbps": 500,
+        "latency_ms": 24,
+        "predicted_latency_ms": 26.399999618530273
       }
     },
     {
@@ -1467,9 +1467,9 @@
       "target": "gNB_008",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 28,
-        "predicted_latency_ms": 31.920000076293945
+        "bandwidth_mbps": 200,
+        "latency_ms": 15,
+        "predicted_latency_ms": 21.1299991607666
       }
     },
     {
@@ -1477,9 +1477,9 @@
       "target": "gNB_008",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 200,
-        "latency_ms": 22,
-        "predicted_latency_ms": 25.270000457763672
+        "bandwidth_mbps": 1000,
+        "latency_ms": 20,
+        "predicted_latency_ms": 24.84000015258789
       }
     },
     {
@@ -1487,9 +1487,9 @@
       "target": "gNB_009",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 200,
-        "latency_ms": 23,
-        "predicted_latency_ms": 27.010000228881836
+        "bandwidth_mbps": 100,
+        "latency_ms": 14,
+        "predicted_latency_ms": 21.6200008392334
       }
     },
     {
@@ -1497,9 +1497,9 @@
       "target": "gNB_009",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 28,
-        "predicted_latency_ms": 29.489999771118164
+        "bandwidth_mbps": 1000,
+        "latency_ms": 25,
+        "predicted_latency_ms": 43.06999969482422
       }
     },
     {
@@ -1507,19 +1507,9 @@
       "target": "gNB_009",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 100,
-        "latency_ms": 25,
-        "predicted_latency_ms": 29.5
-      }
-    },
-    {
-      "source": "FIREWALL_005",
-      "target": "gNB_009",
-      "type": "CONNECTED_TO",
-      "properties": {
         "bandwidth_mbps": 1000,
-        "latency_ms": 28,
-        "predicted_latency_ms": 31.399999618530273
+        "latency_ms": 19,
+        "predicted_latency_ms": 36.93000030517578
       }
     },
     {
@@ -1527,9 +1517,19 @@
       "target": "gNB_009",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 30,
-        "predicted_latency_ms": 31.399999618530273
+        "bandwidth_mbps": 200,
+        "latency_ms": 20,
+        "predicted_latency_ms": 40.939998626708984
+      }
+    },
+    {
+      "source": "FIREWALL_005",
+      "target": "gNB_009",
+      "type": "CONNECTED_TO",
+      "properties": {
+        "bandwidth_mbps": 200,
+        "latency_ms": 20,
+        "predicted_latency_ms": 40.939998626708984
       }
     },
     {
@@ -1537,9 +1537,9 @@
       "target": "gNB_010",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 14,
-        "predicted_latency_ms": 21.280000686645508
+        "bandwidth_mbps": 50,
+        "latency_ms": 10,
+        "predicted_latency_ms": 20.68000030517578
       }
     },
     {
@@ -1547,9 +1547,9 @@
       "target": "gNB_012",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 19,
-        "predicted_latency_ms": 21.229999542236328
+        "bandwidth_mbps": 100,
+        "latency_ms": 13,
+        "predicted_latency_ms": 13.25
       }
     },
     {
@@ -1557,9 +1557,9 @@
       "target": "gNB_012",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 26,
-        "predicted_latency_ms": 23.829999923706055
+        "bandwidth_mbps": 100,
+        "latency_ms": 14,
+        "predicted_latency_ms": 16.15999984741211
       }
     },
     {
@@ -1567,9 +1567,9 @@
       "target": "gNB_012",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 23,
-        "predicted_latency_ms": 27.920000076293945
+        "bandwidth_mbps": 1000,
+        "latency_ms": 19,
+        "predicted_latency_ms": 17.100000381469727
       }
     },
     {
@@ -1577,9 +1577,9 @@
       "target": "gNB_013",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 21,
-        "predicted_latency_ms": 22.540000915527344
+        "bandwidth_mbps": 100,
+        "latency_ms": 20,
+        "predicted_latency_ms": 22.18000030517578
       }
     },
     {
@@ -1587,9 +1587,9 @@
       "target": "gNB_014",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 200,
-        "latency_ms": 11,
-        "predicted_latency_ms": 22.579999923706055
+        "bandwidth_mbps": 1000,
+        "latency_ms": 17,
+        "predicted_latency_ms": 18.15999984741211
       }
     },
     {
@@ -1597,9 +1597,9 @@
       "target": "gNB_014",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 13,
-        "predicted_latency_ms": 22.729999542236328
+        "bandwidth_mbps": 50,
+        "latency_ms": 27,
+        "predicted_latency_ms": 32.689998626708984
       }
     },
     {
@@ -1607,9 +1607,9 @@
       "target": "gNB_015",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 16,
-        "predicted_latency_ms": 24.729999542236328
+        "bandwidth_mbps": 200,
+        "latency_ms": 11,
+        "predicted_latency_ms": 17.309999465942383
       }
     },
     {
@@ -1618,8 +1618,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 1000,
-        "latency_ms": 16,
-        "predicted_latency_ms": 26.329999923706055
+        "latency_ms": 18,
+        "predicted_latency_ms": 24.670000076293945
       }
     },
     {
@@ -1627,9 +1627,9 @@
       "target": "gNB_015",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 15,
-        "predicted_latency_ms": 24.049999237060547
+        "bandwidth_mbps": 1000,
+        "latency_ms": 18,
+        "predicted_latency_ms": 20.739999771118164
       }
     },
     {
@@ -1638,8 +1638,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 500,
-        "latency_ms": 19,
-        "predicted_latency_ms": 23.1200008392334
+        "latency_ms": 16,
+        "predicted_latency_ms": 19.209999084472656
       }
     },
     {
@@ -1648,8 +1648,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 1000,
-        "latency_ms": 15,
-        "predicted_latency_ms": 31.979999542236328
+        "latency_ms": 19,
+        "predicted_latency_ms": 27.469999313354492
       }
     },
     {
@@ -1657,9 +1657,9 @@
       "target": "gNB_016",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 12,
-        "predicted_latency_ms": 15.720000267028809
+        "bandwidth_mbps": 100,
+        "latency_ms": 27,
+        "predicted_latency_ms": 28.229999542236328
       }
     },
     {
@@ -1667,9 +1667,9 @@
       "target": "gNB_016",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 100,
-        "latency_ms": 16,
-        "predicted_latency_ms": 18.420000076293945
+        "bandwidth_mbps": 1000,
+        "latency_ms": 47,
+        "predicted_latency_ms": 59.4900016784668
       }
     },
     {
@@ -1677,9 +1677,9 @@
       "target": "gNB_016",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 22,
-        "predicted_latency_ms": 20.31999969482422
+        "bandwidth_mbps": 50,
+        "latency_ms": 19,
+        "predicted_latency_ms": 33.150001525878906
       }
     },
     {
@@ -1687,9 +1687,9 @@
       "target": "gNB_018",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 13,
-        "predicted_latency_ms": 21.600000381469727
+        "bandwidth_mbps": 100,
+        "latency_ms": 19,
+        "predicted_latency_ms": 24.90999984741211
       }
     },
     {
@@ -1697,9 +1697,9 @@
       "target": "gNB_018",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 100,
-        "latency_ms": 15,
-        "predicted_latency_ms": 16.889999389648438
+        "bandwidth_mbps": 1000,
+        "latency_ms": 23,
+        "predicted_latency_ms": 18.799999237060547
       }
     },
     {
@@ -1707,9 +1707,9 @@
       "target": "gNB_018",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 19,
-        "predicted_latency_ms": 20.290000915527344
+        "bandwidth_mbps": 200,
+        "latency_ms": 14,
+        "predicted_latency_ms": 17.600000381469727
       }
     },
     {
@@ -1717,9 +1717,9 @@
       "target": "gNB_018",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 20,
-        "predicted_latency_ms": 20.139999389648438
+        "bandwidth_mbps": 100,
+        "latency_ms": 23,
+        "predicted_latency_ms": 19.829999923706055
       }
     },
     {
@@ -1727,9 +1727,9 @@
       "target": "gNB_018",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 21,
-        "predicted_latency_ms": 20.93000030517578
+        "bandwidth_mbps": 500,
+        "latency_ms": 19,
+        "predicted_latency_ms": 19.780000686645508
       }
     },
     {
@@ -1738,8 +1738,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 100,
-        "latency_ms": 17,
-        "predicted_latency_ms": 26.790000915527344
+        "latency_ms": 18,
+        "predicted_latency_ms": 17.030000686645508
       }
     },
     {
@@ -1747,9 +1747,9 @@
       "target": "gNB_020",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 22,
-        "predicted_latency_ms": 26.860000610351562
+        "bandwidth_mbps": 50,
+        "latency_ms": 18,
+        "predicted_latency_ms": 26.290000915527344
       }
     },
     {
@@ -1757,9 +1757,9 @@
       "target": "gNB_020",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 20,
-        "predicted_latency_ms": 31.3799991607666
+        "bandwidth_mbps": 100,
+        "latency_ms": 13,
+        "predicted_latency_ms": 15.680000305175781
       }
     },
     {
@@ -1768,8 +1768,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 50,
-        "latency_ms": 24,
-        "predicted_latency_ms": 25.219999313354492
+        "latency_ms": 14,
+        "predicted_latency_ms": 26.700000762939453
       }
     },
     {
@@ -1777,9 +1777,9 @@
       "target": "gNB_020",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 28,
-        "predicted_latency_ms": 28.40999984741211
+        "bandwidth_mbps": 100,
+        "latency_ms": 20,
+        "predicted_latency_ms": 21.059999465942383
       }
     },
     {
@@ -1788,8 +1788,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 500,
-        "latency_ms": 19,
-        "predicted_latency_ms": 22.15999984741211
+        "latency_ms": 25,
+        "predicted_latency_ms": 23.270000457763672
       }
     },
     {
@@ -1798,8 +1798,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 200,
-        "latency_ms": 25,
-        "predicted_latency_ms": 30.81999969482422
+        "latency_ms": 20,
+        "predicted_latency_ms": 26.18000030517578
       }
     },
     {
@@ -1807,9 +1807,9 @@
       "target": "gNB_020",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 25,
-        "predicted_latency_ms": 30.84000015258789
+        "bandwidth_mbps": 200,
+        "latency_ms": 14,
+        "predicted_latency_ms": 23.950000762939453
       }
     },
     {
@@ -1817,9 +1817,9 @@
       "target": "UPF_001",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 23,
-        "predicted_latency_ms": 31.610000610351562
+        "bandwidth_mbps": 200,
+        "latency_ms": 17,
+        "predicted_latency_ms": 29.8700008392334
       }
     },
     {
@@ -1827,9 +1827,9 @@
       "target": "UPF_002",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 18,
-        "predicted_latency_ms": 18.3700008392334
+        "bandwidth_mbps": 50,
+        "latency_ms": 24,
+        "predicted_latency_ms": 40.22999954223633
       }
     },
     {
@@ -1838,8 +1838,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 200,
-        "latency_ms": 16,
-        "predicted_latency_ms": 20.25
+        "latency_ms": 14,
+        "predicted_latency_ms": 17.1200008392334
       }
     },
     {
@@ -1847,9 +1847,9 @@
       "target": "UPF_003",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 26,
-        "predicted_latency_ms": 22.010000228881836
+        "bandwidth_mbps": 500,
+        "latency_ms": 22,
+        "predicted_latency_ms": 34.650001525878906
       }
     },
     {
@@ -1857,9 +1857,9 @@
       "target": "UPF_003",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 200,
-        "latency_ms": 12,
-        "predicted_latency_ms": 19.280000686645508
+        "bandwidth_mbps": 100,
+        "latency_ms": 8,
+        "predicted_latency_ms": 25.219999313354492
       }
     },
     {
@@ -1867,9 +1867,9 @@
       "target": "UPF_004",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 35,
-        "predicted_latency_ms": 41.84000015258789
+        "bandwidth_mbps": 1000,
+        "latency_ms": 30,
+        "predicted_latency_ms": 42.7599983215332
       }
     },
     {
@@ -1877,9 +1877,9 @@
       "target": "UPF_005",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 9,
-        "predicted_latency_ms": 15.90999984741211
+        "bandwidth_mbps": 1000,
+        "latency_ms": 24,
+        "predicted_latency_ms": 17.329999923706055
       }
     },
     {
@@ -1888,8 +1888,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 200,
-        "latency_ms": 24,
-        "predicted_latency_ms": 18.670000076293945
+        "latency_ms": 42,
+        "predicted_latency_ms": 50.86000061035156
       }
     },
     {
@@ -1897,9 +1897,9 @@
       "target": "UPF_006",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 18,
-        "predicted_latency_ms": 21.18000030517578
+        "bandwidth_mbps": 200,
+        "latency_ms": 17,
+        "predicted_latency_ms": 18.559999465942383
       }
     },
     {
@@ -1908,8 +1908,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 1000,
-        "latency_ms": 12,
-        "predicted_latency_ms": 24.200000762939453
+        "latency_ms": 18,
+        "predicted_latency_ms": 20.1299991607666
       }
     },
     {
@@ -1917,9 +1917,9 @@
       "target": "UPF_006",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 22,
-        "predicted_latency_ms": 26.65999984741211
+        "bandwidth_mbps": 1000,
+        "latency_ms": 16,
+        "predicted_latency_ms": 19.860000610351562
       }
     },
     {
@@ -1927,9 +1927,9 @@
       "target": "UPF_008",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 10,
-        "predicted_latency_ms": 20.579999923706055
+        "bandwidth_mbps": 100,
+        "latency_ms": 23,
+        "predicted_latency_ms": 17.229999542236328
       }
     },
     {
@@ -1938,8 +1938,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 50,
-        "latency_ms": 32,
-        "predicted_latency_ms": 31.56999969482422
+        "latency_ms": 28,
+        "predicted_latency_ms": 32.709999084472656
       }
     },
     {
@@ -1947,9 +1947,9 @@
       "target": "UPF_008",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 14,
-        "predicted_latency_ms": 23.540000915527344
+        "bandwidth_mbps": 1000,
+        "latency_ms": 17,
+        "predicted_latency_ms": 22.940000534057617
       }
     },
     {
@@ -1957,9 +1957,9 @@
       "target": "UPF_009",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 22,
-        "predicted_latency_ms": 24.809999465942383
+        "bandwidth_mbps": 100,
+        "latency_ms": 21,
+        "predicted_latency_ms": 22.739999771118164
       }
     },
     {
@@ -1968,8 +1968,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 100,
-        "latency_ms": 19,
-        "predicted_latency_ms": 26.709999084472656
+        "latency_ms": 26,
+        "predicted_latency_ms": 51.40999984741211
       }
     },
     {
@@ -1977,9 +1977,9 @@
       "target": "UPF_009",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 28,
-        "predicted_latency_ms": 35.45000076293945
+        "bandwidth_mbps": 200,
+        "latency_ms": 14,
+        "predicted_latency_ms": 25.010000228881836
       }
     },
     {
@@ -1987,9 +1987,9 @@
       "target": "UPF_009",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 200,
-        "latency_ms": 30,
-        "predicted_latency_ms": 32.27000045776367
+        "bandwidth_mbps": 50,
+        "latency_ms": 17,
+        "predicted_latency_ms": 37.810001373291016
       }
     },
     {
@@ -1997,9 +1997,9 @@
       "target": "UPF_009",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 100,
-        "latency_ms": 29,
-        "predicted_latency_ms": 36.72999954223633
+        "bandwidth_mbps": 200,
+        "latency_ms": 20,
+        "predicted_latency_ms": 39.310001373291016
       }
     },
     {
@@ -2007,9 +2007,9 @@
       "target": "UPF_010",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 200,
-        "latency_ms": 15,
-        "predicted_latency_ms": 24.84000015258789
+        "bandwidth_mbps": 50,
+        "latency_ms": 20,
+        "predicted_latency_ms": 34.79999923706055
       }
     },
     {
@@ -2017,9 +2017,9 @@
       "target": "UPF_010",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 14,
-        "predicted_latency_ms": 26.190000534057617
+        "bandwidth_mbps": 100,
+        "latency_ms": 26,
+        "predicted_latency_ms": 45.18000030517578
       }
     },
     {
@@ -2027,9 +2027,9 @@
       "target": "AMF_001",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 15,
-        "predicted_latency_ms": 21.34000015258789
+        "bandwidth_mbps": 100,
+        "latency_ms": 41,
+        "predicted_latency_ms": 60.4900016784668
       }
     },
     {
@@ -2037,9 +2037,9 @@
       "target": "AMF_002",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 21,
-        "predicted_latency_ms": 26.920000076293945
+        "bandwidth_mbps": 200,
+        "latency_ms": 13,
+        "predicted_latency_ms": 18.940000534057617
       }
     },
     {
@@ -2047,9 +2047,9 @@
       "target": "AMF_002",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 100,
-        "latency_ms": 26,
-        "predicted_latency_ms": 26.600000381469727
+        "bandwidth_mbps": 50,
+        "latency_ms": 13,
+        "predicted_latency_ms": 20.270000457763672
       }
     },
     {
@@ -2057,9 +2057,9 @@
       "target": "AMF_002",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 100,
-        "latency_ms": 21,
-        "predicted_latency_ms": 32.45000076293945
+        "bandwidth_mbps": 200,
+        "latency_ms": 24,
+        "predicted_latency_ms": 29.100000381469727
       }
     },
     {
@@ -2067,9 +2067,9 @@
       "target": "AMF_002",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 23,
-        "predicted_latency_ms": 32.11000061035156
+        "bandwidth_mbps": 200,
+        "latency_ms": 22,
+        "predicted_latency_ms": 26.389999389648438
       }
     },
     {
@@ -2077,9 +2077,9 @@
       "target": "AMF_003",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 200,
-        "latency_ms": 10,
-        "predicted_latency_ms": 18.989999771118164
+        "bandwidth_mbps": 1000,
+        "latency_ms": 18,
+        "predicted_latency_ms": 23.75
       }
     },
     {
@@ -2087,9 +2087,9 @@
       "target": "AMF_004",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 200,
-        "latency_ms": 13,
-        "predicted_latency_ms": 26.34000015258789
+        "bandwidth_mbps": 100,
+        "latency_ms": 33,
+        "predicted_latency_ms": 55.5
       }
     },
     {
@@ -2097,9 +2097,9 @@
       "target": "AMF_004",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 200,
-        "latency_ms": 16,
-        "predicted_latency_ms": 26.040000915527344
+        "bandwidth_mbps": 50,
+        "latency_ms": 41,
+        "predicted_latency_ms": 57.11000061035156
       }
     },
     {
@@ -2108,8 +2108,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 500,
-        "latency_ms": 19,
-        "predicted_latency_ms": 30.469999313354492
+        "latency_ms": 34,
+        "predicted_latency_ms": 59.43000030517578
       }
     },
     {
@@ -2118,8 +2118,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 500,
-        "latency_ms": 24,
-        "predicted_latency_ms": 24.93000030517578
+        "latency_ms": 15,
+        "predicted_latency_ms": 25.299999237060547
       }
     },
     {
@@ -2127,9 +2127,9 @@
       "target": "AMF_006",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 18,
-        "predicted_latency_ms": 20.649999618530273
+        "bandwidth_mbps": 500,
+        "latency_ms": 39,
+        "predicted_latency_ms": 63.45000076293945
       }
     },
     {
@@ -2137,9 +2137,9 @@
       "target": "AMF_006",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 20,
-        "predicted_latency_ms": 34.56999969482422
+        "bandwidth_mbps": 500,
+        "latency_ms": 42,
+        "predicted_latency_ms": 62.38999938964844
       }
     },
     {
@@ -2147,9 +2147,9 @@
       "target": "AMF_006",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 100,
-        "latency_ms": 17,
-        "predicted_latency_ms": 24.729999542236328
+        "bandwidth_mbps": 50,
+        "latency_ms": 39,
+        "predicted_latency_ms": 65.80000305175781
       }
     },
     {
@@ -2157,9 +2157,9 @@
       "target": "AMF_008",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 18,
-        "predicted_latency_ms": 25.15999984741211
+        "bandwidth_mbps": 200,
+        "latency_ms": 44,
+        "predicted_latency_ms": 62.4900016784668
       }
     },
     {
@@ -2167,9 +2167,9 @@
       "target": "AMF_008",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 200,
-        "latency_ms": 23,
-        "predicted_latency_ms": 23.68000030517578
+        "bandwidth_mbps": 1000,
+        "latency_ms": 38,
+        "predicted_latency_ms": 56.90999984741211
       }
     },
     {
@@ -2178,8 +2178,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 200,
-        "latency_ms": 19,
-        "predicted_latency_ms": 25.059999465942383
+        "latency_ms": 38,
+        "predicted_latency_ms": 53.029998779296875
       }
     },
     {
@@ -2187,9 +2187,9 @@
       "target": "SMF_001",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 100,
-        "latency_ms": 26,
-        "predicted_latency_ms": 35.11000061035156
+        "bandwidth_mbps": 50,
+        "latency_ms": 12,
+        "predicted_latency_ms": 21.600000381469727
       }
     },
     {
@@ -2197,9 +2197,9 @@
       "target": "SMF_001",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 28,
-        "predicted_latency_ms": 35.11000061035156
+        "bandwidth_mbps": 500,
+        "latency_ms": 12,
+        "predicted_latency_ms": 21.600000381469727
       }
     },
     {
@@ -2208,8 +2208,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 200,
-        "latency_ms": 28,
-        "predicted_latency_ms": 36.72999954223633
+        "latency_ms": 19,
+        "predicted_latency_ms": 23.389999389648438
       }
     },
     {
@@ -2217,9 +2217,9 @@
       "target": "SMF_001",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 100,
-        "latency_ms": 26,
-        "predicted_latency_ms": 31.93000030517578
+        "bandwidth_mbps": 500,
+        "latency_ms": 17,
+        "predicted_latency_ms": 31.420000076293945
       }
     },
     {
@@ -2228,8 +2228,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 200,
-        "latency_ms": 29,
-        "predicted_latency_ms": 29.489999771118164
+        "latency_ms": 16,
+        "predicted_latency_ms": 25.239999771118164
       }
     },
     {
@@ -2238,8 +2238,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 100,
-        "latency_ms": 24,
-        "predicted_latency_ms": 21.739999771118164
+        "latency_ms": 13,
+        "predicted_latency_ms": 39.08000183105469
       }
     },
     {
@@ -2247,9 +2247,9 @@
       "target": "SMF_002",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 20,
-        "predicted_latency_ms": 18.670000076293945
+        "bandwidth_mbps": 200,
+        "latency_ms": 17,
+        "predicted_latency_ms": 23.420000076293945
       }
     },
     {
@@ -2257,9 +2257,9 @@
       "target": "SMF_002",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 16,
-        "predicted_latency_ms": 20.520000457763672
+        "bandwidth_mbps": 500,
+        "latency_ms": 14,
+        "predicted_latency_ms": 24.889999389648438
       }
     },
     {
@@ -2267,9 +2267,9 @@
       "target": "SMF_003",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 24,
-        "predicted_latency_ms": 27.059999465942383
+        "bandwidth_mbps": 50,
+        "latency_ms": 8,
+        "predicted_latency_ms": 25.3700008392334
       }
     },
     {
@@ -2278,8 +2278,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 1000,
-        "latency_ms": 16,
-        "predicted_latency_ms": 26.670000076293945
+        "latency_ms": 11,
+        "predicted_latency_ms": 25.649999618530273
       }
     },
     {
@@ -2287,9 +2287,9 @@
       "target": "SMF_004",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 100,
-        "latency_ms": 19,
-        "predicted_latency_ms": 19.809999465942383
+        "bandwidth_mbps": 200,
+        "latency_ms": 46,
+        "predicted_latency_ms": 58.81999969482422
       }
     },
     {
@@ -2297,9 +2297,9 @@
       "target": "SMF_004",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 22,
-        "predicted_latency_ms": 21.34000015258789
+        "bandwidth_mbps": 1000,
+        "latency_ms": 14,
+        "predicted_latency_ms": 33.65999984741211
       }
     },
     {
@@ -2307,9 +2307,9 @@
       "target": "SMF_004",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 16,
-        "predicted_latency_ms": 17.90999984741211
+        "bandwidth_mbps": 1000,
+        "latency_ms": 26,
+        "predicted_latency_ms": 29.170000076293945
       }
     },
     {
@@ -2317,9 +2317,9 @@
       "target": "SMF_005",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 23,
-        "predicted_latency_ms": 24.989999771118164
+        "bandwidth_mbps": 100,
+        "latency_ms": 37,
+        "predicted_latency_ms": 61.939998626708984
       }
     },
     {
@@ -2327,9 +2327,9 @@
       "target": "SMF_005",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 18,
-        "predicted_latency_ms": 23.989999771118164
+        "bandwidth_mbps": 100,
+        "latency_ms": 19,
+        "predicted_latency_ms": 39.11000061035156
       }
     },
     {
@@ -2337,9 +2337,9 @@
       "target": "SMF_006",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 200,
-        "latency_ms": 16,
-        "predicted_latency_ms": 24.920000076293945
+        "bandwidth_mbps": 50,
+        "latency_ms": 15,
+        "predicted_latency_ms": 17.760000228881836
       }
     },
     {
@@ -2347,9 +2347,9 @@
       "target": "SMF_007",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
+        "bandwidth_mbps": 200,
         "latency_ms": 18,
-        "predicted_latency_ms": 27.6200008392334
+        "predicted_latency_ms": 24.40999984741211
       }
     },
     {
@@ -2358,8 +2358,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 1000,
-        "latency_ms": 24,
-        "predicted_latency_ms": 35.52000045776367
+        "latency_ms": 20,
+        "predicted_latency_ms": 26.09000015258789
       }
     },
     {
@@ -2368,8 +2368,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 1000,
-        "latency_ms": 24,
-        "predicted_latency_ms": 25.719999313354492
+        "latency_ms": 11,
+        "predicted_latency_ms": 19.639999389648438
       }
     },
     {
@@ -2377,9 +2377,9 @@
       "target": "EDGE_DC_002",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 27,
-        "predicted_latency_ms": 34.04999923706055
+        "bandwidth_mbps": 1000,
+        "latency_ms": 15,
+        "predicted_latency_ms": 18.6299991607666
       }
     },
     {
@@ -2387,9 +2387,9 @@
       "target": "EDGE_DC_002",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 100,
-        "latency_ms": 21,
-        "predicted_latency_ms": 24.049999237060547
+        "bandwidth_mbps": 200,
+        "latency_ms": 16,
+        "predicted_latency_ms": 24.25
       }
     },
     {
@@ -2397,9 +2397,9 @@
       "target": "EDGE_DC_002",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 100,
-        "latency_ms": 24,
-        "predicted_latency_ms": 29.200000762939453
+        "bandwidth_mbps": 1000,
+        "latency_ms": 16,
+        "predicted_latency_ms": 16.31999969482422
       }
     },
     {
@@ -2407,9 +2407,9 @@
       "target": "EDGE_DC_003",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 11,
-        "predicted_latency_ms": 20.690000534057617
+        "bandwidth_mbps": 100,
+        "latency_ms": 22,
+        "predicted_latency_ms": 41.31999969482422
       }
     },
     {
@@ -2417,9 +2417,9 @@
       "target": "EDGE_DC_003",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 16,
-        "predicted_latency_ms": 22.729999542236328
+        "bandwidth_mbps": 500,
+        "latency_ms": 20,
+        "predicted_latency_ms": 23.149999618530273
       }
     },
     {
@@ -2427,9 +2427,9 @@
       "target": "EDGE_DC_004",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 200,
-        "latency_ms": 25,
-        "predicted_latency_ms": 28.8799991607666
+        "bandwidth_mbps": 500,
+        "latency_ms": 19,
+        "predicted_latency_ms": 42.290000915527344
       }
     },
     {
@@ -2437,9 +2437,9 @@
       "target": "EDGE_DC_005",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 100,
-        "latency_ms": 21,
-        "predicted_latency_ms": 22.780000686645508
+        "bandwidth_mbps": 500,
+        "latency_ms": 13,
+        "predicted_latency_ms": 23.6200008392334
       }
     },
     {
@@ -2447,9 +2447,9 @@
       "target": "EDGE_DC_005",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 100,
-        "latency_ms": 34,
-        "predicted_latency_ms": 29.1200008392334
+        "bandwidth_mbps": 50,
+        "latency_ms": 15,
+        "predicted_latency_ms": 42.630001068115234
       }
     },
     {
@@ -2457,9 +2457,9 @@
       "target": "EDGE_DC_005",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 25,
-        "predicted_latency_ms": 27.360000610351562
+        "bandwidth_mbps": 1000,
+        "latency_ms": 18,
+        "predicted_latency_ms": 28.729999542236328
       }
     },
     {
@@ -2468,8 +2468,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 100,
-        "latency_ms": 18,
-        "predicted_latency_ms": 19.100000381469727
+        "latency_ms": 10,
+        "predicted_latency_ms": 22.31999969482422
       }
     },
     {
@@ -2477,9 +2477,9 @@
       "target": "EDGE_DC_005",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 200,
-        "latency_ms": 24,
-        "predicted_latency_ms": 19.8700008392334
+        "bandwidth_mbps": 100,
+        "latency_ms": 10,
+        "predicted_latency_ms": 26.950000762939453
       }
     },
     {
@@ -2487,9 +2487,9 @@
       "target": "EDGE_DC_006",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 22,
-        "predicted_latency_ms": 27.809999465942383
+        "bandwidth_mbps": 200,
+        "latency_ms": 40,
+        "predicted_latency_ms": 58.220001220703125
       }
     },
     {
@@ -2497,9 +2497,9 @@
       "target": "EDGE_DC_006",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 30,
-        "predicted_latency_ms": 30.860000610351562
+        "bandwidth_mbps": 50,
+        "latency_ms": 21,
+        "predicted_latency_ms": 25.809999465942383
       }
     },
     {
@@ -2507,9 +2507,9 @@
       "target": "EDGE_DC_007",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 10,
-        "predicted_latency_ms": 13.729999542236328
+        "bandwidth_mbps": 1000,
+        "latency_ms": 25,
+        "predicted_latency_ms": 19.68000030517578
       }
     },
     {
@@ -2517,9 +2517,9 @@
       "target": "EDGE_DC_007",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 200,
+        "bandwidth_mbps": 1000,
         "latency_ms": 13,
-        "predicted_latency_ms": 23.889999389648438
+        "predicted_latency_ms": 15.789999961853027
       }
     },
     {
@@ -2527,9 +2527,9 @@
       "target": "EDGE_DC_008",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 17,
-        "predicted_latency_ms": 22.540000915527344
+        "bandwidth_mbps": 500,
+        "latency_ms": 73,
+        "predicted_latency_ms": 76.23999786376953
       }
     },
     {
@@ -2537,9 +2537,9 @@
       "target": "CORE_DC_001",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 15,
-        "predicted_latency_ms": 16.940000534057617
+        "bandwidth_mbps": 100,
+        "latency_ms": 6,
+        "predicted_latency_ms": 19.270000457763672
       }
     },
     {
@@ -2547,9 +2547,9 @@
       "target": "CORE_DC_001",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 41,
-        "predicted_latency_ms": 35.029998779296875
+        "bandwidth_mbps": 1000,
+        "latency_ms": 21,
+        "predicted_latency_ms": 26.790000915527344
       }
     },
     {
@@ -2557,9 +2557,9 @@
       "target": "CORE_DC_002",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 16,
-        "predicted_latency_ms": 21.559999465942383
+        "bandwidth_mbps": 1000,
+        "latency_ms": 25,
+        "predicted_latency_ms": 23.40999984741211
       }
     },
     {
@@ -2567,9 +2567,9 @@
       "target": "CORE_DC_002",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 14,
-        "predicted_latency_ms": 17.59000015258789
+        "bandwidth_mbps": 200,
+        "latency_ms": 24,
+        "predicted_latency_ms": 24.15999984741211
       }
     },
     {
@@ -2577,9 +2577,9 @@
       "target": "CORE_DC_003",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 20,
-        "predicted_latency_ms": 22.639999389648438
+        "bandwidth_mbps": 100,
+        "latency_ms": 23,
+        "predicted_latency_ms": 27.450000762939453
       }
     },
     {
@@ -2587,9 +2587,9 @@
       "target": "CORE_DC_003",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 200,
-        "latency_ms": 23,
-        "predicted_latency_ms": 31.18000030517578
+        "bandwidth_mbps": 50,
+        "latency_ms": 14,
+        "predicted_latency_ms": 31.670000076293945
       }
     },
     {
@@ -2598,8 +2598,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 500,
-        "latency_ms": 21,
-        "predicted_latency_ms": 35.16999816894531
+        "latency_ms": 15,
+        "predicted_latency_ms": 29.780000686645508
       }
     },
     {
@@ -2607,9 +2607,9 @@
       "target": "CORE_DC_003",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 24,
-        "predicted_latency_ms": 36.88999938964844
+        "bandwidth_mbps": 200,
+        "latency_ms": 19,
+        "predicted_latency_ms": 24.899999618530273
       }
     },
     {
@@ -2617,9 +2617,9 @@
       "target": "CORE_DC_003",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 200,
-        "latency_ms": 26,
-        "predicted_latency_ms": 32.66999816894531
+        "bandwidth_mbps": 50,
+        "latency_ms": 20,
+        "predicted_latency_ms": 34.150001525878906
       }
     },
     {
@@ -2627,9 +2627,9 @@
       "target": "CORE_DC_004",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 17,
-        "predicted_latency_ms": 26.40999984741211
+        "bandwidth_mbps": 200,
+        "latency_ms": 20,
+        "predicted_latency_ms": 25.670000076293945
       }
     },
     {
@@ -2637,9 +2637,9 @@
       "target": "CORE_DC_004",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 200,
-        "latency_ms": 18,
-        "predicted_latency_ms": 27.25
+        "bandwidth_mbps": 500,
+        "latency_ms": 16,
+        "predicted_latency_ms": 37.0
       }
     },
     {
@@ -2647,9 +2647,9 @@
       "target": "CORE_DC_004",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 16,
-        "predicted_latency_ms": 20.889999389648438
+        "bandwidth_mbps": 200,
+        "latency_ms": 13,
+        "predicted_latency_ms": 42.63999938964844
       }
     },
     {
@@ -2657,9 +2657,9 @@
       "target": "FIREWALL_001",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 22,
-        "predicted_latency_ms": 27.329999923706055
+        "bandwidth_mbps": 1000,
+        "latency_ms": 10,
+        "predicted_latency_ms": 17.729999542236328
       }
     },
     {
@@ -2667,9 +2667,9 @@
       "target": "FIREWALL_001",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 26,
-        "predicted_latency_ms": 29.18000030517578
+        "bandwidth_mbps": 50,
+        "latency_ms": 16,
+        "predicted_latency_ms": 23.229999542236328
       }
     },
     {
@@ -2677,9 +2677,9 @@
       "target": "FIREWALL_002",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 100,
-        "latency_ms": 23,
-        "predicted_latency_ms": 29.15999984741211
+        "bandwidth_mbps": 1000,
+        "latency_ms": 21,
+        "predicted_latency_ms": 28.010000228881836
       }
     },
     {
@@ -2687,9 +2687,9 @@
       "target": "FIREWALL_002",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 26,
-        "predicted_latency_ms": 28.760000228881836
+        "bandwidth_mbps": 200,
+        "latency_ms": 14,
+        "predicted_latency_ms": 24.270000457763672
       }
     },
     {
@@ -2697,9 +2697,9 @@
       "target": "FIREWALL_003",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 100,
-        "latency_ms": 17,
-        "predicted_latency_ms": 15.890000343322754
+        "bandwidth_mbps": 500,
+        "latency_ms": 25,
+        "predicted_latency_ms": 27.639999389648438
       }
     },
     {
@@ -2707,9 +2707,9 @@
       "target": "FIREWALL_004",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 16,
-        "predicted_latency_ms": 21.760000228881836
+        "bandwidth_mbps": 500,
+        "latency_ms": 23,
+        "predicted_latency_ms": 37.5
       }
     },
     {
@@ -2717,9 +2717,9 @@
       "target": "FIREWALL_004",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 100,
-        "latency_ms": 17,
-        "predicted_latency_ms": 20.1299991607666
+        "bandwidth_mbps": 200,
+        "latency_ms": 24,
+        "predicted_latency_ms": 20.450000762939453
       }
     },
     {
@@ -2727,9 +2727,9 @@
       "target": "FIREWALL_004",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 15,
-        "predicted_latency_ms": 18.270000457763672
+        "bandwidth_mbps": 1000,
+        "latency_ms": 25,
+        "predicted_latency_ms": 32.709999084472656
       }
     },
     {
@@ -2737,9 +2737,9 @@
       "target": "MONITOR_001",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 1000,
-        "latency_ms": 49,
-        "predicted_latency_ms": 45.720001220703125
+        "bandwidth_mbps": 200,
+        "latency_ms": 19,
+        "predicted_latency_ms": 35.2599983215332
       }
     },
     {
@@ -2747,9 +2747,9 @@
       "target": "MONITOR_001",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 100,
-        "latency_ms": 46,
-        "predicted_latency_ms": 45.20000076293945
+        "bandwidth_mbps": 50,
+        "latency_ms": 18,
+        "predicted_latency_ms": 30.75
       }
     },
     {
@@ -2757,9 +2757,9 @@
       "target": "MONITOR_002",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 21,
-        "predicted_latency_ms": 32.16999816894531
+        "bandwidth_mbps": 100,
+        "latency_ms": 17,
+        "predicted_latency_ms": 25.809999465942383
       }
     },
     {
@@ -2768,8 +2768,8 @@
       "type": "CONNECTED_TO",
       "properties": {
         "bandwidth_mbps": 50,
-        "latency_ms": 20,
-        "predicted_latency_ms": 23.290000915527344
+        "latency_ms": 22,
+        "predicted_latency_ms": 28.81999969482422
       }
     },
     {
@@ -2777,9 +2777,9 @@
       "target": "MONITOR_002",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 100,
-        "latency_ms": 23,
-        "predicted_latency_ms": 34.27000045776367
+        "bandwidth_mbps": 500,
+        "latency_ms": 20,
+        "predicted_latency_ms": 30.0
       }
     },
     {
@@ -2787,9 +2787,9 @@
       "target": "MONITOR_003",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 12,
-        "predicted_latency_ms": 20.239999771118164
+        "bandwidth_mbps": 100,
+        "latency_ms": 14,
+        "predicted_latency_ms": 17.170000076293945
       }
     },
     {
@@ -2797,9 +2797,9 @@
       "target": "MONITOR_003",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 12,
-        "predicted_latency_ms": 16.18000030517578
+        "bandwidth_mbps": 200,
+        "latency_ms": 23,
+        "predicted_latency_ms": 26.520000457763672
       }
     },
     {
@@ -2807,9 +2807,9 @@
       "target": "MONITOR_003",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 200,
-        "latency_ms": 18,
-        "predicted_latency_ms": 23.670000076293945
+        "bandwidth_mbps": 100,
+        "latency_ms": 9,
+        "predicted_latency_ms": 28.299999237060547
       }
     },
     {
@@ -2817,9 +2817,9 @@
       "target": "MONITOR_004",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 50,
-        "latency_ms": 26,
-        "predicted_latency_ms": 36.189998626708984
+        "bandwidth_mbps": 500,
+        "latency_ms": 17,
+        "predicted_latency_ms": 39.880001068115234
       }
     },
     {
@@ -2827,9 +2827,9 @@
       "target": "MONITOR_005",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 200,
-        "latency_ms": 23,
-        "predicted_latency_ms": 20.690000534057617
+        "bandwidth_mbps": 500,
+        "latency_ms": 14,
+        "predicted_latency_ms": 25.829999923706055
       }
     },
     {
@@ -2837,9 +2837,9 @@
       "target": "MONITOR_005",
       "type": "CONNECTED_TO",
       "properties": {
-        "bandwidth_mbps": 500,
-        "latency_ms": 28,
-        "predicted_latency_ms": 24.579999923706055
+        "bandwidth_mbps": 100,
+        "latency_ms": 11,
+        "predicted_latency_ms": 27.829999923706055
       }
     }
   ]

@@ -53,7 +53,7 @@
 let nodeMap = new Map();
 
 function getNodeColor(node) {
-  const status = node.properties?.alarm_status;
+  const status = node.properties?.predicted_alarm_status;
   if (status === "RED") return "#ff0000";
   if (status === "YELLOW") return "#ffbf00";
   return "#0f0";
@@ -83,8 +83,8 @@ function updateGraphProperties(newData) {
 
   d3.selectAll("line").transition().duration(300)
     .style("stroke", d => {
-      const s = d.source?.properties?.alarm_status;
-      const t = d.target?.properties?.alarm_status;
+      const s = d.source?.properties?.predicted_alarm_status;
+      const t = d.target?.properties?.predicted_alarm_status;
       if (s === "RED" || t === "RED") return "#ff0000";
       if (s === "YELLOW" || t === "YELLOW") return "#ffbf00";
       return "#0f0";
@@ -93,13 +93,13 @@ function updateGraphProperties(newData) {
 
 setInterval(() => {
   const ts = Date.now();
-  d3.json(`graph-data/graph_live_predicted.json?t=${ts}`).then(newData => {
+  d3.json(`graph-data/graph_live_alarm_predicted.json?t=${ts}`).then(newData => {
     if (!newData?.nodes?.length) return;
     updateGraphProperties(newData);
   });
 }, 5000);
 
-d3.json("graph-data/graph_live_predicted.json").then(data => {
+d3.json("graph-data/graph_live_alarm_predicted.json").then(data => {
   const loader = document.getElementById("loader");
   loader.classList.add("hidden");
   setTimeout(() => loader.remove(), 1000);
@@ -118,8 +118,8 @@ d3.json("graph-data/graph_live_predicted.json").then(data => {
     .selectAll("line").data(links).enter().append("line")
     .attr("class", "link")
     .style("stroke", d => {
-      const statusA = d.source.properties?.alarm_status;
-      const statusB = d.target.properties?.alarm_status;
+      const statusA = d.source.properties?.predicted_alarm_status;
+      const statusB = d.target.properties?.predicted_alarm_status;
       if (statusA === "RED" || statusB === "RED") return "#ff0000";
       if (statusA === "YELLOW" || statusB === "YELLOW") return "#ffbf00";
       return "#0f0";
@@ -127,15 +127,13 @@ d3.json("graph-data/graph_live_predicted.json").then(data => {
     .style("stroke-width", 2)
     .on("mouseover", (event, d) => {
       const latency = d.properties?.latency_ms ? d.properties.latency_ms + "ms" : "N/A";
-      const predicted = d.properties?.predicted_latency_ms != null ? Math.round(d.properties.predicted_latency_ms) + "ms" : "N/A";
       const bandwidth = d.properties?.bandwidth_mbps || "N/A";
       const sourceId = d.source.id || d.source;
       const targetId = d.target.id || d.target;
       tooltip.style("display", "block")
         .style("left", (event.pageX + 10) + "px")
         .style("top", (event.pageY + 10) + "px")
-        .html(`<strong>Connection</strong><br>From: ${sourceId}<br>To: ${targetId}<br>Latency: ${latency}<br>Predicted: ${predicted}<br>Bandwidth: ${bandwidth}`);
-
+        .html(`<strong>Connection</strong><br>From: ${sourceId}<br>To: ${targetId}<br>Latency: ${latency}<br>Bandwidth: ${bandwidth}`);
     })
     .on("mouseout", () => tooltip.style("display", "none"));
 

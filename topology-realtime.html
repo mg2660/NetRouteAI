@@ -3,82 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Graph Latency Path Finder</title>
+  <title>Live Graph</title>
   <script src="https://d3js.org/d3.v6.min.js"></script>
-
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-      color: #0f0;
-    }
-    .node {
-      stroke: #fff;
-      stroke-width: 1.5px;
-    }
-    .link {
-      stroke-width: 2;
-    }
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #000; color: #0f0; }
+    .node { stroke: #fff; stroke-width: 1.5px; }
+    .link { stroke-width: 2; }
     .tooltip {
-      position: absolute;
-      background: #111;
-      border: 1px solid #0f0;
-      padding: 6px;
-      font-size: 12px;
-      pointer-events: none;
-      color: #0f0;
+      position: absolute; background: #111; border: 1px solid #0f0;
+      padding: 6px; font-size: 12px; pointer-events: none; color: #0f0;
     }
-    .labels text {
-      paint-order: stroke;
-      stroke: black;
-      stroke-width: 2px;
-      fill: #0f0;
-    }
-    .glow {
-      filter: url(#glow);
-    }
+    .labels text { paint-order: stroke; stroke: black; stroke-width: 2px; fill: #0f0; }
+    .glow { filter: url(#glow); }
     #loader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: #000;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      z-index: 1000;
+      position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+      background-color: #000; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; z-index: 1000;
       transition: opacity 0.8s ease;
     }
-
-    #loader.hidden {
-      opacity: 0;
-      pointer-events: none;
-    }
-
+    #loader.hidden { opacity: 0; pointer-events: none; }
     .spinner {
-      width: 50px;
-      height: 50px;
-      border: 5px solid #0f0;
-      border-top: 5px solid transparent;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-      margin-bottom: 16px;
+      width: 50px; height: 50px; border: 5px solid #0f0;
+      border-top: 5px solid transparent; border-radius: 50%;
+      animation: spin 1s linear infinite; margin-bottom: 16px;
     }
-
-    .loader-text {
-      color: #0f0;
-      font-size: 20px;
-      font-family: monospace;
-      text-shadow: 0 0 10px #0f0;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
+    .loader-text { color: #0f0; font-size: 20px; font-family: monospace; text-shadow: 0 0 10px #0f0; }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
   </style>
 </head>
 <body>
@@ -97,28 +47,62 @@
     </filter>
   </defs>
 </svg>
-
 <div id="tooltip" class="tooltip" style="display: none;"></div>
 
-<div id="path-controls" style="position: absolute; top: 10px; left: 10px; z-index: 10; background: #111; padding: 10px; border: 1px solid #0f0;">
-  <label style="color:#0f0;">From:</label>
-  <select id="source-node"></select>
-  <label style="color:#0f0; margin-left: 10px;">To:</label>
-  <select id="target-node"></select>
-  <button id="find-path" style="margin-left: 10px;">Find Best Path</button>
-  <button id="find-alternatives" style="margin-left: 10px;">Alt Paths</button>
-  <button id="reset-path" style="margin-left: 10px;">Reset</button>
-</div>
-
-<div id="path-result" style="position: absolute; top: 70px; left: 10px; z-index: 10; background: #111; padding: 10px; border: 1px solid #0f0; color:#0f0; max-width: 400px;"></div> 
 <script>
+let nodeMap = new Map();
+
+function getNodeColor(node) {
+  const status = node.properties?.alarm_status;
+  if (status === "RED") return "#ff0000";
+  if (status === "YELLOW") return "#ffbf00";
+  return "#0f0";
+}
+
+function updateGraphProperties(newData) {
+  newData.nodes.forEach(n => {
+    const existing = nodeMap.get(n.id);
+    if (existing) existing.properties = n.properties;
+  });
+
+  d3.selectAll("line").each(function(d) {
+    const sourceId = typeof d.source === "object" ? d.source.id : d.source;
+    const targetId = typeof d.target === "object" ? d.target.id : d.target;
+
+    const updatedLink = newData.links.find(
+      l => (l.source === sourceId && l.target === targetId) || (l.source === targetId && l.target === sourceId)
+    );
+
+    if (updatedLink) {
+      d.properties = updatedLink.properties;
+    }
+  });
+
+  d3.selectAll("circle").transition().duration(300)
+    .attr("fill", getNodeColor);
+
+  d3.selectAll("line").transition().duration(300)
+    .style("stroke", d => {
+      const s = d.source?.properties?.alarm_status;
+      const t = d.target?.properties?.alarm_status;
+      if (s === "RED" || t === "RED") return "#ff0000";
+      if (s === "YELLOW" || t === "YELLOW") return "#ffbf00";
+      return "#0f0";
+    });
+}
+
+setInterval(() => {
+  const ts = Date.now();
+  d3.json(`graph-data/graph_live.json?t=${ts}`).then(newData => {
+    if (!newData?.nodes?.length) return;
+    updateGraphProperties(newData);
+  });
+}, 5000);
+
 d3.json("graph-data/graph_live.json").then(data => {
   const loader = document.getElementById("loader");
-loader.classList.add("hidden");
-
-setTimeout(() => {
-  loader.remove(); // optional: removes it from DOM completely
-  }, 1000); // wait for fade-out transition
+  loader.classList.add("hidden");
+  setTimeout(() => loader.remove(), 1000);
 
   const nodes = data.nodes;
   const links = data.links;
@@ -130,81 +114,49 @@ setTimeout(() => {
   const zoom = d3.zoom().scaleExtent([0.1, 4]).on("zoom", event => container.attr("transform", event.transform));
   svg.call(zoom);
 
-  const getNodeColor = node => {
-    const status = node.properties?.alarm_status;
-    if (status === "RED") return "#ff0000";
-    if (status === "YELLOW") return "#ffbf00";
-    return "#0f0";
-  };
-
   const link = container.append("g").attr("class", "links")
-  .selectAll("line")
-  .data(links)
-  .enter().append("line")
-  .attr("class", "link")
-  .style("stroke", d => {
-    const statusA = d.source.properties?.alarm_status;
-    const statusB = d.target.properties?.alarm_status;
-    if (statusA === "RED" || statusB === "RED") return "#ff0000";
-    if (statusA === "YELLOW" || statusB === "YELLOW") return "#ffbf00";
-    return "#0f0";
-  })
-  .style("stroke-width", 2)
-  .on("mouseover", (event, d) => {
-    const latency = d.properties?.latency_ms ? d.properties.latency_ms + "ms" : "N/A";
-    const bandwidth = d.properties?.bandwidth_mbps || "N/A";
-    const sourceId = d.source.id || d.source;
-    const targetId = d.target.id || d.target;
-
-    tooltip.style("display", "block")
-      .style("left", Math.min(event.pageX + 10, window.innerWidth - 200) + "px")
-      .style("top", Math.min(event.pageY + 10, window.innerHeight - 100) + "px")
-      .html(
-        `<strong>Connection</strong><br>
-         From: ${sourceId}<br>
-         To: ${targetId}<br>
-         Latency: ${latency}<br>
-         Bandwidth: ${bandwidth}`
-      );
-  })
-  .on("mouseout", () => tooltip.style("display", "none"));
-
+    .selectAll("line").data(links).enter().append("line")
+    .attr("class", "link")
+    .style("stroke", d => {
+      const statusA = d.source.properties?.alarm_status;
+      const statusB = d.target.properties?.alarm_status;
+      if (statusA === "RED" || statusB === "RED") return "#ff0000";
+      if (statusA === "YELLOW" || statusB === "YELLOW") return "#ffbf00";
+      return "#0f0";
+    })
+    .style("stroke-width", 2)
+    .on("mouseover", (event, d) => {
+      const latency = d.properties?.latency_ms ? d.properties.latency_ms + "ms" : "N/A";
+      const bandwidth = d.properties?.bandwidth_mbps || "N/A";
+      const sourceId = d.source.id || d.source;
+      const targetId = d.target.id || d.target;
+      tooltip.style("display", "block")
+        .style("left", (event.pageX + 10) + "px")
+        .style("top", (event.pageY + 10) + "px")
+        .html(`<strong>Connection</strong><br>From: ${sourceId}<br>To: ${targetId}<br>Latency: ${latency}<br>Bandwidth: ${bandwidth}`);
+    })
+    .on("mouseout", () => tooltip.style("display", "none"));
 
   const node = container.append("g").attr("class", "nodes")
-    .selectAll("circle")
-    .data(nodes)
-    .enter().append("circle")
-    .attr("r", 12)
-    .attr("fill", getNodeColor)
-    .attr("class", "node")
+    .selectAll("circle").data(nodes).enter().append("circle")
+    .attr("r", 12).attr("fill", getNodeColor).attr("class", "node")
     .call(d3.drag()
-      .on("start", dragstarted)
-      .on("drag", dragged)
-      .on("end", dragended))
-      .on("mouseover", (event, d) => {
-        tooltip.style("display", "block")
-      .style("left", Math.min(event.pageX + 10, window.innerWidth - 200) + "px")
-      .style("top", Math.min(event.pageY + 10, window.innerHeight - 100) + "px")
-      .html(`${d.id}
-${Object.entries(d.properties).map(([k,v]) => `${k}: ${v}`).join("<br>")}`);
-
-d3.select(event.currentTarget).attr("filter", "url(#glow)").attr("r", 16);
-})
-.on("mouseout", (event, d) => {
-tooltip.style("display", "none");
-d3.select(event.currentTarget).attr("filter", null).attr("r", 12);
-});
+      .on("start", event => { if (!event.active) simulation.alphaTarget(0.3).restart(); event.subject.fx = event.subject.x; event.subject.fy = event.subject.y; })
+      .on("drag", event => { event.subject.fx = event.x; event.subject.fy = event.y; })
+      .on("end", event => { if (!event.active) simulation.alphaTarget(0); event.subject.fx = null; event.subject.fy = null; })
+    )
+    .on("mouseover", (event, d) => {
+      tooltip.style("display", "block")
+        .style("left", (event.pageX + 10) + "px")
+        .style("top", (event.pageY + 10) + "px")
+        .html(`<strong>${d.id}</strong><br>${Object.entries(d.properties).map(([k,v]) => `${k}: ${v}`).join("<br>")}`);
+    })
+    .on("mouseout", () => tooltip.style("display", "none"));
 
   const labels = container.append("g").attr("class", "labels")
-    .selectAll("text")
-    .data(nodes)
-    .enter().append("text")
-    .attr("dy", -10)
-    .attr("text-anchor", "middle")
-    .text(d => d.id)
-    .style("font-size", "14px")
-    .style("font-weight", "bold")
-    .style("fill", "#0f0");
+    .selectAll("text").data(nodes).enter().append("text")
+    .attr("dy", -10).attr("text-anchor", "middle")
+    .text(d => d.id).style("font-size", "14px").style("font-weight", "bold").style("fill", "#0f0");
 
   const simulation = d3.forceSimulation(nodes)
     .force("link", d3.forceLink(links).id(d => d.id).distance(120))
@@ -217,315 +169,8 @@ d3.select(event.currentTarget).attr("filter", null).attr("r", 12);
       labels.attr("x", d => d.x).attr("y", d => d.y);
     });
 
-  function dragstarted(event, d) {
-    if (!event.active) simulation.alphaTarget(0.3).restart();
-    d.fx = d.x; d.fy = d.y;
-  }
-  function dragged(event, d) { d.fx = event.x; d.fy = event.y; }
-  function dragended(event, d) {
-    if (!event.active) simulation.alphaTarget(0);
-    d.fx = null; d.fy = null;
-  }
-
-  const nodeMap = new Map(nodes.map(n => [n.id, n]));
-  const edgeMap = new Map();
-  const sourceDropdown = document.getElementById("source-node");
-const targetDropdown = document.getElementById("target-node");
-
-nodes.forEach(node => {
-  const option1 = document.createElement("option");
-option1.value = node.id;
-option1.textContent = node.id;
-  sourceDropdown.appendChild(option1);
-
-  const option2 = document.createElement("option");
-option2.value = node.id;
-option2.textContent = node.id;
-  targetDropdown.appendChild(option2);
+  nodeMap = new Map(nodes.map(n => [n.id, n]));
 });
-
-  links.forEach(link => {
-    const sourceId = link.source.id || link.source;
-    const targetId = link.target.id || link.target;
-    let latency = 0;
-    const rawLatency = link.properties?.latency_ms;
-    if (typeof rawLatency === "string") {
-      const match = rawLatency.match(/[\d.]+/);
-      if (match) latency = parseFloat(match[0]);
-    } else if (typeof rawLatency === "number") {
-      latency = rawLatency;
-    }
-
-    edgeMap.set(`${sourceId}->${targetId}`, { latency, link });
-    edgeMap.set(`${targetId}->${sourceId}`, { latency, link });
-  });
-
-  function findKShortestPaths(src, dst, k) {
-    const allPaths = [];
-
-    function dfs(current, target, visited, path, totalLatency) {
-      if (allPaths.length >= k) return;
-      if (current === target) {
-        allPaths.push({ path: [...path], latency: totalLatency });
-        return;
-      }
-
-      visited.add(current);
-
-      for (const [key, { latency }] of edgeMap.entries()) {
-        const [from, to] = key.split("->");
-        if (from === current && !visited.has(to) && nodeMap.get(to).properties?.alarm_status !== "RED") {
-          path.push(to);
-          dfs(to, target, visited, path, totalLatency + latency);
-          path.pop();
-        }
-      }
-
-      visited.delete(current);
-    }
-
-    dfs(src, dst, new Set(), [src], 0);
-    return allPaths.sort((a, b) => a.latency - b.latency).slice(0, k);
-  }
-  
-function rebuildMaps(newData) {
-  // Clear maps
-  nodeMap.clear();
-  edgeMap.clear();
-
-  // Rebuild node map
-  newData.nodes.forEach(node => {
-    nodeMap.set(node.id, node);
-  });
-
-  // Rebuild edge map
-  newData.links.forEach(link => {
-    const sourceId = link.source;
-    const targetId = link.target;
-    let latency = 0;
-    const rawLatency = link.properties?.latency_ms;
-    if (typeof rawLatency === "string") {
-      const match = rawLatency.match(/[\d.]+/);
-      if (match) latency = parseFloat(match[0]);
-    } else if (typeof rawLatency === "number") {
-      latency = rawLatency;
-    }
-
-    edgeMap.set(`${sourceId}->${targetId}`, { latency, link });
-    edgeMap.set(`${targetId}->${sourceId}`, { latency, link });
-  });
-}
-
-function updateGraphProperties(newData) {
-  rebuildMaps(newData);
-
-  // Update node properties
-  newData.nodes.forEach(newNode => {
-    const existingNode = nodeMap.get(newNode.id);
-    if (existingNode) {
-      existingNode.properties = newNode.properties;
-    }
-  });
-
-  // Update link data
-  d3.selectAll("line").each(function(d) {
-    const sourceId = typeof d.source === "object" ? d.source.id : d.source;
-    const targetId = typeof d.target === "object" ? d.target.id : d.target;
-
-    const updatedLink = newData.links.find(l =>
-      (l.source === sourceId && l.target === targetId) ||
-      (l.source === targetId && l.target === sourceId)
-    );
-
-    if (updatedLink) {
-      d.properties = updatedLink.properties;
-      d.source = nodeMap.get(updatedLink.source);
-      d.target = nodeMap.get(updatedLink.target);
-    }
-  });
-
-  // Refresh node visuals
-  d3.selectAll("circle")
-    .transition().duration(500)
-    .attr("fill", getNodeColor);
-
-  // Refresh link visuals
-  d3.selectAll("line")
-    .transition().duration(500)
-    .style("stroke", d => {
-      const statusA = d.source.properties?.alarm_status;
-      const statusB = d.target.properties?.alarm_status;
-      if (statusA === "RED" || statusB === "RED") return "#ff0000";
-      if (statusA === "YELLOW" || statusB === "YELLOW") return "#ffbf00";
-      return "#0f0";
-    });
-}
-
-
-setInterval(() => {
-  const timestamp = new Date().getTime();
-d3.json(`graph-data/graph_live.json?t=${timestamp}`).then(newData => {
-    updateGraphProperties(newData);
-
-    const src = document.getElementById("source-node").value.trim();
-    const dst = document.getElementById("target-node").value.trim();
-    if (src && dst && nodeMap.has(src) && nodeMap.has(dst)) {
-      const results = findKShortestPaths(src, dst, 3);
-      if (results.length > 0) {
-        const best = results[0];
-        const alternatives = results.slice(1);
-        sendPathsToServer(best, alternatives);
-        document.getElementById("path-result").innerHTML = highlightPaths(results);
-      }
-    }
-
-  });
-}, 5000); // adjust interval as needed
-  function sendPathsToServer(best, alternatives) {
-  // const generateOrderId = () => {
-  //   const now = Date.now().toString().slice(-5);
-  //   return "ORD" + now;
-  // };
-
-  const formatPathText = (paths) => {
-    return paths.map(p => {
-      const labeledPath = p.path.map(n =>
-        nodeMap.get(n)?.labels?.includes("PlayerConsole") ? "Player Console" : n
-      );
-      return `${labeledPath.join(" → ")} (${p.latency}ms)`;
-    });
-  };
-
-  const bestText = formatPathText([best])[0];
-  const altText = formatPathText(alternatives).join(" | ");
-  const responseText = `Best Path: ${bestText}` + (altText ? ` Alternative Paths: ${altText}` : "");
-
-  const payload = {
-    //order_id: generateOrderId(),
-    response_date_time: new Date().toISOString(),
-    response_text: responseText,
-    response_by: "Anonymous",
-    category: "5G Topology routes"
-  };
-
-  // Store in localStorage
-  const existing = JSON.parse(localStorage.getItem("topologyResponses") || "[]");
-  existing.push(payload);
-  localStorage.setItem("topologyResponses", JSON.stringify(existing));
-
-  console.log("Payload stored in localStorage:", payload);
-}
-
-
-
-  function highlightPaths(paths) {
-  const colors = ["#00ffff", "#ffa500", "#ff00ff"];
-  const edgeKeysPerPath = paths.map(({ path }) => {
-    const keys = new Set();
-    for (let i = 0; i < path.length - 1; i++) {
-      keys.add(`${path[i]}->${path[i+1]}`);
-      keys.add(`${path[i+1]}->${path[i]}`);
-    }
-    return keys;
-  });
-
-  d3.selectAll("line").style("stroke-width", 2).style("stroke", d => {
-    const sourceStatus = d.source.properties?.alarm_status;
-    const targetStatus = d.target.properties?.alarm_status;
-    if (sourceStatus === "RED" || targetStatus === "RED") return "#ff0000";
-    if (sourceStatus === "YELLOW" || targetStatus === "YELLOW") return "#ffbf00";
-    return "#0f0";
-  });
-
-  // Apply glow and color per path
-  edgeKeysPerPath.forEach((keys, i) => {
-    d3.selectAll("line")
-      .filter(d => keys.has(`${d.source.id}->${d.target.id}`))
-      .style("stroke", colors[i % colors.length])
-      .style("stroke-width", 4)
-      .attr("class", "glow");
-  });
-
-  // Highlight nodes
-  d3.selectAll("circle")
-    .style("stroke", d => {
-      if (paths.some(p => p.path.includes(d.id))) return "#fff";
-      return "#0f0";
-    })
-    .style("stroke-width", d => {
-      if (paths.some(p => p.path.includes(d.id))) return 3;
-      return 1.5;
-    });
-
-  return paths.map((p, i) => {
-  const pathWithLabels = p.path.map(n =>
-    nodeMap.get(n)?.labels?.includes("PlayerConsole") ? "PlayerConsole" : n
-  );
-  return `<span style="color:${colors[i]}">${pathWithLabels.join(" → ")} (${p.latency}ms)</span>`;
-}).join("<br>");
-}
-
-document.getElementById("find-path").addEventListener("click", () => {
-  const src = document.getElementById("source-node").value.trim();
-  const dst = document.getElementById("target-node").value.trim();
-
-  if (!nodeMap.has(src) || !nodeMap.has(dst)) {
-    document.getElementById("path-result").innerText = "Invalid source or destination.";
-    return;
-  }
-
-  const results = findKShortestPaths(src, dst, 1);
-  if (results.length === 0) {
-    document.getElementById("path-result").innerText = "No path found.";
-    return;
-  }
-
-  const best = results[0]; // includes both path and latency
-  sendPathsToServer(best, []); // No alternatives
-
-  document.getElementById("path-result").innerHTML = highlightPaths([best]);
-});
-
-document.getElementById("find-alternatives").addEventListener("click", () => {
-  const src = document.getElementById("source-node").value.trim();
-  const dst = document.getElementById("target-node").value.trim();
-
-  if (!nodeMap.has(src) || !nodeMap.has(dst)) {
-    document.getElementById("path-result").innerText = "Invalid source or destination.";
-    return;
-  }
-
-  const results = findKShortestPaths(src, dst, 3);
-  if (results.length === 0) {
-    document.getElementById("path-result").innerText = "No path found.";
-    return;
-  }
-
-  const best = results[0];
-  const alternatives = results.slice(1);
-  sendPathsToServer(best, alternatives);
-
-  document.getElementById("path-result").innerHTML = highlightPaths(results);
-});
-
-
-  document.getElementById("reset-path").addEventListener("click", () => {
-    localStorage.clear();
-    document.getElementById("source-node").value = "";
-    document.getElementById("target-node").value = "";
-    document.getElementById("path-result").innerText = "";
-    d3.selectAll("line").style("stroke-width", 2).style("stroke", d => {
-      const sourceStatus = d.source.properties?.alarm_status;
-      const targetStatus = d.target.properties?.alarm_status;
-      if (sourceStatus === "RED" || targetStatus === "RED") return "#ff0000";
-      if (sourceStatus === "YELLOW" || targetStatus === "YELLOW") return "#ffbf00";
-      return "#0f0";
-    });
-    d3.selectAll("circle").style("stroke", "#fff").style("stroke-width", 1.5);
-  });
-});
-
 </script>
-
 </body>
 </html>

@@ -8,14 +8,14 @@ let graph = require('./graph-data/graph.json');
 const csvDir = path.join(__dirname, 'csv-data');
 if (!fs.existsSync(csvDir)) fs.mkdirSync(csvDir);
 
-const INTERVAL_MS = 5000;
+const INTERVAL_MS = 2500;
 let recordCount = 0;
 let fileIndex = 1;
 
 let nodeCsvPath = getCsvPath('node');
 let linkCsvPath = getCsvPath('link');
 
-// ---- Helper Functions ----
+// === Helper Functions ===
 
 function getCsvPath(type) {
   const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
@@ -45,7 +45,7 @@ function appendCsv(filePath, data, fields) {
   fs.appendFileSync(filePath, csv + '\n');
 }
 
-// ---- Graph Functions ----
+// === Graph Functions ===
 
 const nodeStates = new Map();
 
@@ -86,6 +86,51 @@ graph.nodes.forEach(node => {
   });
 });
 
+// Place this outside the function so it persists across cycles
+const alarmHistory = new Map(); // Keeps last 3 readings for smoothing
+
+function updateAlarmStatus(node, cpu, latency, role) {
+  const key = node.id;
+  const hist = alarmHistory.get(key) || [];
+  hist.push({ cpu, latency });
+  if (hist.length > 3) hist.shift(); // Keep last 3 records
+  alarmHistory.set(key, hist);
+
+  // Role sensitivity (weighting factor)
+  const roleSensitivity = {
+    "gNB": 1.0,
+    "CORE_DC": 1.2,
+    "EDGE_DC": 1.1,
+    "FIREWALL": 1.3,
+    "MONITOR": 0.9
+  };
+
+  const factor = roleSensitivity[role] || 1.0;
+
+  // Calculate smoothed averages
+  const avgCpu = hist.reduce((sum, h) => sum + h.cpu, 0) / hist.length;
+  const avgLatency = hist.reduce((sum, h) => sum + h.latency, 0) / hist.length;
+
+  const adjustedCpu = avgCpu * factor;
+  const adjustedLatency = avgLatency * factor;
+
+  // Core logic
+  let alarm = "GREEN";
+  if (adjustedCpu > 90 || adjustedLatency > 50) alarm = "RED";
+  else if (adjustedCpu > 70 || adjustedLatency > 25) alarm = "YELLOW";
+
+  // Add 5% random fluctuation
+  const roll = Math.random();
+  if (roll < 0.05) {
+    if (alarm === "RED") alarm = "YELLOW";
+    else if (alarm === "YELLOW") alarm = randomChoice(["GREEN", "RED"]);
+    else if (alarm === "GREEN") alarm = "YELLOW";
+  }
+
+  return alarm;
+}
+
+
 function updateGraphData(original) {
   const updated = JSON.parse(JSON.stringify(original));
   const timeFactor = Math.sin((Date.now() / 1000 / 60) * (2 * Math.PI));
@@ -107,35 +152,38 @@ function updateGraphData(original) {
     node.properties.latency_avg = parseFloat(state.latency.toFixed(2));
     node.properties.packet_loss_rate = parseFloat((state.latency / 20 + Math.random()).toFixed(2));
 
-    const c = state.cpu;
-    const l = state.latency;
-    node.properties.alarm_status = c > 90 || l > 50 ? "RED" : (c > 70 || l > 25 ? "YELLOW" : "GREEN");
-    node.properties.is_overloaded = c > 90 || state.mem > 90 || node.properties.packet_loss_rate > 5;
+    const role = node.labels?.[0] || "UNKNOWN";
+    const alarm = updateAlarmStatus(node, state.cpu, state.latency, role);
+    node.properties.alarm_status = alarm;
+    node.properties.is_overloaded = state.cpu > 90 || state.mem > 90 || node.properties.packet_loss_rate > 5;
   });
 
   updated.links.forEach(link => {
-  if (!link.properties) return;
+    if (!link.properties) return;
 
-  const srcNode = updated.nodes.find(n => n.id === link.source)?.properties;
-  const tgtNode = updated.nodes.find(n => n.id === link.target)?.properties;
+    const srcNode = updated.nodes.find(n => n.id === link.source)?.properties;
+    const tgtNode = updated.nodes.find(n => n.id === link.target)?.properties;
 
-  const base = ((srcNode?.latency_avg || 10) + (tgtNode?.latency_avg || 10)) / 2;
-  const noise = randomFloat(-5, 5);
-  link.properties.latency_ms = Math.max(5, Math.floor(base + noise));
+    const base = ((srcNode?.latency_avg || 10) + (tgtNode?.latency_avg || 10)) / 2;
+    const noise = randomFloat(-5, 5);
+    link.properties.latency_ms = Math.max(5, Math.floor(base + noise));
 
-  link.properties.bandwidth_mbps = randomChoice([50, 100, 200, 500, 1000]);
-});
+    link.properties.bandwidth_mbps = randomChoice([50, 100, 200, 500, 1000]);
+  });
+
 
   return updated;
 }
 
-// ---- Main Loop ----
+// === Main Loop ===
 
 setInterval(() => {
   const updatedGraph = updateGraphData(graph);
   const timestamp = new Date().toISOString();
 
-  fs.writeFileSync(path.join(__dirname, 'graph-data', 'graph_live.json'), JSON.stringify(updatedGraph, null, 2));
+  const livePath = path.join(__dirname, 'graph-data', 'graph_live.json');
+  fs.writeFileSync(livePath, JSON.stringify(updatedGraph, null, 2));
+
 
   const nodeRows = updatedGraph.nodes.map(n => ({
     timestamp,
@@ -151,36 +199,43 @@ setInterval(() => {
 
   const alarmMap = { GREEN: 0, YELLOW: 1, RED: 2 };
 
-const linkRows = updatedGraph.links.map(link => {
-  const srcNode = updatedGraph.nodes.find(n => n.id === link.source);
-  const tgtNode = updatedGraph.nodes.find(n => n.id === link.target);
-  const src = srcNode?.properties;
-  const tgt = tgtNode?.properties;
-  return {
-  timestamp,
-  source: link.source,
-  target: link.target,
-  latency_ms: link.properties?.latency_ms,
-  bandwidth_mbps: link.properties?.bandwidth_mbps,
-  cpu_source: src?.cpu_usage,
-  cpu_target: tgt?.cpu_usage,
-  mem_source: src?.memory_usage,
-  mem_target: tgt?.memory_usage,
-  packet_loss_rate: (src?.packet_loss_rate + tgt?.packet_loss_rate) / 2,
-  alarm_status_source: alarmMap[src?.alarm_status] ?? -1,
-  alarm_status_target: alarmMap[tgt?.alarm_status] ?? -1,
-  latency_avg_source: src?.latency_avg,
-  latency_avg_target: tgt?.latency_avg
-};
-});
+  const linkRows = updatedGraph.links.map(link => {
+    const srcNode = updatedGraph.nodes.find(n => n.id === link.source);
+    const tgtNode = updatedGraph.nodes.find(n => n.id === link.target);
+    const src = srcNode?.properties;
+    const tgt = tgtNode?.properties;
 
+    return {
+      timestamp,
+      source: link.source,
+      target: link.target,
+      latency_ms: link.properties?.latency_ms,
+      bandwidth_mbps: link.properties?.bandwidth_mbps,
+      cpu_source: src?.cpu_usage,
+      cpu_target: tgt?.cpu_usage,
+      mem_source: src?.memory_usage,
+      mem_target: tgt?.memory_usage,
+      packet_loss_rate: (src?.packet_loss_rate + tgt?.packet_loss_rate) / 2,
+      alarm_status_source: alarmMap[src?.alarm_status] ?? -1,
+      alarm_status_target: alarmMap[tgt?.alarm_status] ?? -1,
+      latency_avg_source: src?.latency_avg,
+      latency_avg_target: tgt?.latency_avg
+    };
+  });
 
   appendCsv(nodeCsvPath, nodeRows, Object.keys(nodeRows[0]));
   appendCsv(linkCsvPath, linkRows, Object.keys(linkRows[0]));
 
   recordCount += linkRows.length;
-  console.log(`Updated ${recordCount} records @ ${new Date().toLocaleTimeString()}`);
+  console.log(`📊 Updated ${recordCount} records @ ${new Date().toLocaleTimeString()}`);
 
   if (recordCount >= 10000) rotateFilesAndTrain();
 
 }, INTERVAL_MS);
+
+// === Stop script after 10 minutes ===
+const STOP_AFTER_MS = 10 * 60 * 1000;
+setTimeout(() => {
+  console.log(`\n🛑 Script stopped after ${STOP_AFTER_MS / 60000} minutes.`);
+  process.exit(0);
+}, STOP_AFTER_MS);

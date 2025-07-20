@@ -9,12 +9,13 @@
         "temperature": 97.7,
         "memory_usage": 56.7,
         "latency_avg": 58.71,
-        "location": "São Paulo",
+        "location": "S\u00c3\u00a3o Paulo",
         "id": "AMF_004",
         "cpu_usage": 80.84,
         "type": "AMF",
         "status_last_updated": "2025-06-07T06:42:49",
-        "uptime_hours": 1902
+        "uptime_hours": 1902,
+        "predicted_alarm_status": "RED"
       },
       "labels": [
         "Node"
@@ -34,7 +35,8 @@
         "cpu_usage": 76.19,
         "type": "gNB",
         "status_last_updated": "2025-05-29T14:57:49",
-        "uptime_hours": 503
+        "uptime_hours": 503,
+        "predicted_alarm_status": "YELLOW"
       },
       "labels": [
         "Node"
@@ -54,7 +56,8 @@
         "cpu_usage": 22.83,
         "type": "gNB",
         "status_last_updated": "2025-06-11T06:52:49",
-        "uptime_hours": 2551
+        "uptime_hours": 2551,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -74,7 +77,8 @@
         "cpu_usage": 36.29,
         "type": "gNB",
         "status_last_updated": "2025-06-17T23:35:49",
-        "uptime_hours": 717
+        "uptime_hours": 717,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -94,7 +98,8 @@
         "cpu_usage": 0.19,
         "type": "FIREWALL",
         "status_last_updated": "2025-06-23T02:19:49",
-        "uptime_hours": 1702
+        "uptime_hours": 1702,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -114,7 +119,8 @@
         "cpu_usage": 75.87,
         "type": "AMF",
         "status_last_updated": "2025-06-15T02:57:49",
-        "uptime_hours": 4866
+        "uptime_hours": 4866,
+        "predicted_alarm_status": "YELLOW"
       },
       "labels": [
         "Node"
@@ -134,7 +140,8 @@
         "cpu_usage": 0,
         "type": "gNB",
         "status_last_updated": "2025-06-20T04:05:49",
-        "uptime_hours": 729
+        "uptime_hours": 729,
+        "predicted_alarm_status": "YELLOW"
       },
       "labels": [
         "Node"
@@ -154,7 +161,8 @@
         "cpu_usage": 35.15,
         "type": "gNB",
         "status_last_updated": "2025-06-23T17:06:49",
-        "uptime_hours": 4317
+        "uptime_hours": 4317,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -174,7 +182,8 @@
         "cpu_usage": 30.79,
         "type": "FIREWALL",
         "status_last_updated": "2025-06-02T22:14:49",
-        "uptime_hours": 3799
+        "uptime_hours": 3799,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -194,7 +203,8 @@
         "cpu_usage": 43.12,
         "type": "gNB",
         "status_last_updated": "2025-05-31T18:29:49",
-        "uptime_hours": 3591
+        "uptime_hours": 3591,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -214,7 +224,8 @@
         "cpu_usage": 84.8,
         "type": "AMF",
         "status_last_updated": "2025-05-29T16:24:49",
-        "uptime_hours": 2221
+        "uptime_hours": 2221,
+        "predicted_alarm_status": "YELLOW"
       },
       "labels": [
         "Node"
@@ -234,7 +245,8 @@
         "cpu_usage": 27.16,
         "type": "MONITOR",
         "status_last_updated": "2025-06-06T15:36:49",
-        "uptime_hours": 4623
+        "uptime_hours": 4623,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -249,12 +261,13 @@
         "temperature": 99.2,
         "memory_usage": 51.11,
         "latency_avg": 16.78,
-        "location": "São Paulo",
+        "location": "S\u00c3\u00a3o Paulo",
         "id": "gNB_009",
         "cpu_usage": 39.47,
         "type": "gNB",
         "status_last_updated": "2025-06-10T08:30:49",
-        "uptime_hours": 2628
+        "uptime_hours": 2628,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -274,7 +287,8 @@
         "cpu_usage": 78.14,
         "type": "gNB",
         "status_last_updated": "2025-06-09T07:24:49",
-        "uptime_hours": 4020
+        "uptime_hours": 4020,
+        "predicted_alarm_status": "YELLOW"
       },
       "labels": [
         "Node"
@@ -294,7 +308,8 @@
         "cpu_usage": 52.71,
         "type": "gNB",
         "status_last_updated": "2025-06-12T13:57:49",
-        "uptime_hours": 2729
+        "uptime_hours": 2729,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -314,7 +329,8 @@
         "cpu_usage": 24.92,
         "type": "UPF",
         "status_last_updated": "2025-06-11T11:57:49",
-        "uptime_hours": 4907
+        "uptime_hours": 4907,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -334,7 +350,8 @@
         "cpu_usage": 61.22,
         "type": "gNB",
         "status_last_updated": "2025-06-13T08:19:49",
-        "uptime_hours": 3649
+        "uptime_hours": 3649,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -349,12 +366,13 @@
         "temperature": 64.3,
         "memory_usage": 45.49,
         "latency_avg": 15.16,
-        "location": "São Paulo",
+        "location": "S\u00c3\u00a3o Paulo",
         "id": "MONITOR_003",
         "cpu_usage": 87.26,
         "type": "MONITOR",
         "status_last_updated": "2025-06-25T15:12:49",
-        "uptime_hours": 2646
+        "uptime_hours": 2646,
+        "predicted_alarm_status": "YELLOW"
       },
       "labels": [
         "Node"
@@ -374,7 +392,8 @@
         "cpu_usage": 46.88,
         "type": "EDGE_DC",
         "status_last_updated": "2025-06-05T09:38:49",
-        "uptime_hours": 4063
+        "uptime_hours": 4063,
+        "predicted_alarm_status": "YELLOW"
       },
       "labels": [
         "Node"
@@ -394,7 +413,8 @@
         "cpu_usage": 40.94,
         "type": "EDGE_DC",
         "status_last_updated": "2025-06-03T19:48:49",
-        "uptime_hours": 986
+        "uptime_hours": 986,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -414,7 +434,8 @@
         "cpu_usage": 36.7,
         "type": "AMF",
         "status_last_updated": "2025-06-16T16:46:49",
-        "uptime_hours": 1072
+        "uptime_hours": 1072,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -434,7 +455,8 @@
         "cpu_usage": 29.04,
         "type": "gNB",
         "status_last_updated": "2025-06-01T22:47:49",
-        "uptime_hours": 4086
+        "uptime_hours": 4086,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -454,7 +476,8 @@
         "cpu_usage": 18.18,
         "type": "gNB",
         "status_last_updated": "2025-06-15T17:21:49",
-        "uptime_hours": 1160
+        "uptime_hours": 1160,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -474,7 +497,8 @@
         "cpu_usage": 0.08,
         "type": "SMF",
         "status_last_updated": "2025-06-04T04:10:49",
-        "uptime_hours": 1050
+        "uptime_hours": 1050,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -494,7 +518,8 @@
         "cpu_usage": 82.56,
         "type": "CORE_DC",
         "status_last_updated": "2025-06-19T17:59:49",
-        "uptime_hours": 3274
+        "uptime_hours": 3274,
+        "predicted_alarm_status": "YELLOW"
       },
       "labels": [
         "Node"
@@ -509,12 +534,13 @@
         "temperature": 64.4,
         "memory_usage": 17.7,
         "latency_avg": 18.16,
-        "location": "São Paulo",
+        "location": "S\u00c3\u00a3o Paulo",
         "id": "gNB_014",
         "cpu_usage": 40.82,
         "type": "gNB",
         "status_last_updated": "2025-06-19T02:55:49",
-        "uptime_hours": 2816
+        "uptime_hours": 2816,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -534,7 +560,8 @@
         "cpu_usage": 30.19,
         "type": "UPF",
         "status_last_updated": "2025-06-02T05:08:49",
-        "uptime_hours": 1955
+        "uptime_hours": 1955,
+        "predicted_alarm_status": "YELLOW"
       },
       "labels": [
         "Node"
@@ -554,7 +581,8 @@
         "cpu_usage": 78.12,
         "type": "gNB",
         "status_last_updated": "2025-06-04T19:11:49",
-        "uptime_hours": 4321
+        "uptime_hours": 4321,
+        "predicted_alarm_status": "YELLOW"
       },
       "labels": [
         "Node"
@@ -574,7 +602,8 @@
         "cpu_usage": 30.35,
         "type": "gNB",
         "status_last_updated": "2025-06-20T09:53:49",
-        "uptime_hours": 608
+        "uptime_hours": 608,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -594,7 +623,8 @@
         "cpu_usage": 26.79,
         "type": "AMF",
         "status_last_updated": "2025-06-05T11:40:49",
-        "uptime_hours": 2825
+        "uptime_hours": 2825,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -614,7 +644,8 @@
         "cpu_usage": 80.57,
         "type": "gNB",
         "status_last_updated": "2025-06-07T20:34:49",
-        "uptime_hours": 3404
+        "uptime_hours": 3404,
+        "predicted_alarm_status": "YELLOW"
       },
       "labels": [
         "Node"
@@ -634,7 +665,8 @@
         "cpu_usage": 75.5,
         "type": "AMF",
         "status_last_updated": "2025-06-23T14:48:49",
-        "uptime_hours": 4504
+        "uptime_hours": 4504,
+        "predicted_alarm_status": "RED"
       },
       "labels": [
         "Node"
@@ -654,7 +686,8 @@
         "cpu_usage": 57.49,
         "type": "gNB",
         "status_last_updated": "2025-06-01T20:01:49",
-        "uptime_hours": 3902
+        "uptime_hours": 3902,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -674,7 +707,8 @@
         "cpu_usage": 81.44,
         "type": "UPF",
         "status_last_updated": "2025-06-07T04:13:49",
-        "uptime_hours": 4170
+        "uptime_hours": 4170,
+        "predicted_alarm_status": "YELLOW"
       },
       "labels": [
         "Node"
@@ -694,7 +728,8 @@
         "cpu_usage": 21.51,
         "type": "SMF",
         "status_last_updated": "2025-06-09T09:39:49",
-        "uptime_hours": 501
+        "uptime_hours": 501,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -714,7 +749,8 @@
         "cpu_usage": 51.26,
         "type": "gNB",
         "status_last_updated": "2025-06-11T03:25:49",
-        "uptime_hours": 2775
+        "uptime_hours": 2775,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -734,7 +770,8 @@
         "cpu_usage": 73.42,
         "type": "gNB",
         "status_last_updated": "2025-06-13T09:56:49",
-        "uptime_hours": 4268
+        "uptime_hours": 4268,
+        "predicted_alarm_status": "YELLOW"
       },
       "labels": [
         "Node"
@@ -754,7 +791,8 @@
         "cpu_usage": 31.89,
         "type": "UPF",
         "status_last_updated": "2025-06-14T20:48:49",
-        "uptime_hours": 1479
+        "uptime_hours": 1479,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -774,7 +812,8 @@
         "cpu_usage": 6.29,
         "type": "EDGE_DC",
         "status_last_updated": "2025-05-29T08:53:49",
-        "uptime_hours": 624
+        "uptime_hours": 624,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -794,7 +833,8 @@
         "cpu_usage": 39.56,
         "type": "EDGE_DC",
         "status_last_updated": "2025-06-05T15:57:49",
-        "uptime_hours": 2701
+        "uptime_hours": 2701,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -814,7 +854,8 @@
         "cpu_usage": 44.74,
         "type": "MONITOR",
         "status_last_updated": "2025-05-30T16:27:49",
-        "uptime_hours": 1383
+        "uptime_hours": 1383,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -834,7 +875,8 @@
         "cpu_usage": 28.71,
         "type": "UPF",
         "status_last_updated": "2025-06-09T00:29:49",
-        "uptime_hours": 2538
+        "uptime_hours": 2538,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -854,7 +896,8 @@
         "cpu_usage": 12.4,
         "type": "UPF",
         "status_last_updated": "2025-06-22T15:08:49",
-        "uptime_hours": 4004
+        "uptime_hours": 4004,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -874,7 +917,8 @@
         "cpu_usage": 58.92,
         "type": "UPF",
         "status_last_updated": "2025-06-08T15:32:49",
-        "uptime_hours": 3826
+        "uptime_hours": 3826,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -894,7 +938,8 @@
         "cpu_usage": 56.29,
         "type": "UPF",
         "status_last_updated": "2025-06-02T07:05:49",
-        "uptime_hours": 2171
+        "uptime_hours": 2171,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -914,7 +959,8 @@
         "cpu_usage": 14.43,
         "type": "SMF",
         "status_last_updated": "2025-06-22T01:25:49",
-        "uptime_hours": 4805
+        "uptime_hours": 4805,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -934,7 +980,8 @@
         "cpu_usage": 0.04,
         "type": "SMF",
         "status_last_updated": "2025-06-06T10:50:49",
-        "uptime_hours": 1275
+        "uptime_hours": 1275,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -954,7 +1001,8 @@
         "cpu_usage": 86.8,
         "type": "UPF",
         "status_last_updated": "2025-06-20T13:41:49",
-        "uptime_hours": 2698
+        "uptime_hours": 2698,
+        "predicted_alarm_status": "YELLOW"
       },
       "labels": [
         "Node"
@@ -974,7 +1022,8 @@
         "cpu_usage": 0.1,
         "type": "UPF",
         "status_last_updated": "2025-05-28T10:22:49",
-        "uptime_hours": 935
+        "uptime_hours": 935,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -994,7 +1043,8 @@
         "cpu_usage": 49.79,
         "type": "AMF",
         "status_last_updated": "2025-05-31T02:09:49",
-        "uptime_hours": 1421
+        "uptime_hours": 1421,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -1014,7 +1064,8 @@
         "cpu_usage": 0.09,
         "type": "CORE_DC",
         "status_last_updated": "2025-06-24T01:33:49",
-        "uptime_hours": 4363
+        "uptime_hours": 4363,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -1034,7 +1085,8 @@
         "cpu_usage": 37.42,
         "type": "AMF",
         "status_last_updated": "2025-06-04T05:43:49",
-        "uptime_hours": 4126
+        "uptime_hours": 4126,
+        "predicted_alarm_status": "RED"
       },
       "labels": [
         "Node"
@@ -1054,7 +1106,8 @@
         "cpu_usage": 14.95,
         "type": "CORE_DC",
         "status_last_updated": "2025-06-24T00:43:49",
-        "uptime_hours": 305
+        "uptime_hours": 305,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -1074,7 +1127,8 @@
         "cpu_usage": 55.57,
         "type": "gNB",
         "status_last_updated": "2025-06-14T19:19:49",
-        "uptime_hours": 1784
+        "uptime_hours": 1784,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -1094,7 +1148,8 @@
         "cpu_usage": 25.86,
         "type": "SMF",
         "status_last_updated": "2025-06-09T11:15:49",
-        "uptime_hours": 1928
+        "uptime_hours": 1928,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -1109,12 +1164,13 @@
         "temperature": 52.8,
         "memory_usage": 35.72,
         "latency_avg": 26.83,
-        "location": "São Paulo",
+        "location": "S\u00c3\u00a3o Paulo",
         "id": "FIREWALL_004",
         "cpu_usage": 82.88,
         "type": "FIREWALL",
         "status_last_updated": "2025-06-10T07:57:49",
-        "uptime_hours": 2068
+        "uptime_hours": 2068,
+        "predicted_alarm_status": "YELLOW"
       },
       "labels": [
         "Node"
@@ -1134,7 +1190,8 @@
         "cpu_usage": 26.68,
         "type": "SMF",
         "status_last_updated": "2025-06-26T01:28:49",
-        "uptime_hours": 420
+        "uptime_hours": 420,
+        "predicted_alarm_status": "YELLOW"
       },
       "labels": [
         "Node"
@@ -1154,7 +1211,8 @@
         "cpu_usage": 91.22,
         "type": "CORE_DC",
         "status_last_updated": "2025-05-29T22:47:49",
-        "uptime_hours": 809
+        "uptime_hours": 809,
+        "predicted_alarm_status": "RED"
       },
       "labels": [
         "Node"
@@ -1174,7 +1232,8 @@
         "cpu_usage": 34.75,
         "type": "SMF",
         "status_last_updated": "2025-06-13T09:12:49",
-        "uptime_hours": 59
+        "uptime_hours": 59,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -1194,7 +1253,8 @@
         "cpu_usage": 45.39,
         "type": "EDGE_DC",
         "status_last_updated": "2025-06-18T10:04:49",
-        "uptime_hours": 3849
+        "uptime_hours": 3849,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -1214,7 +1274,8 @@
         "cpu_usage": 1.01,
         "type": "EDGE_DC",
         "status_last_updated": "2025-06-12T08:56:49",
-        "uptime_hours": 2301
+        "uptime_hours": 2301,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -1234,7 +1295,8 @@
         "cpu_usage": 70.33,
         "type": "FIREWALL",
         "status_last_updated": "2025-06-10T19:16:49",
-        "uptime_hours": 525
+        "uptime_hours": 525,
+        "predicted_alarm_status": "YELLOW"
       },
       "labels": [
         "Node"
@@ -1254,7 +1316,8 @@
         "cpu_usage": 20.06,
         "type": "MONITOR",
         "status_last_updated": "2025-06-22T19:07:49",
-        "uptime_hours": 1778
+        "uptime_hours": 1778,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -1269,12 +1332,13 @@
         "temperature": 82.1,
         "memory_usage": 25.62,
         "latency_avg": 15.4,
-        "location": "São Paulo",
+        "location": "S\u00c3\u00a3o Paulo",
         "id": "EDGE_DC_007",
         "cpu_usage": 47.22,
         "type": "EDGE_DC",
         "status_last_updated": "2025-06-16T17:24:49",
-        "uptime_hours": 2348
+        "uptime_hours": 2348,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -1294,7 +1358,8 @@
         "cpu_usage": 27.2,
         "type": "EDGE_DC",
         "status_last_updated": "2025-06-20T04:21:49",
-        "uptime_hours": 3254
+        "uptime_hours": 3254,
+        "predicted_alarm_status": "YELLOW"
       },
       "labels": [
         "Node"
@@ -1314,7 +1379,8 @@
         "cpu_usage": 50.03,
         "type": "MONITOR",
         "status_last_updated": "2025-06-02T19:22:49",
-        "uptime_hours": 2433
+        "uptime_hours": 2433,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
@@ -1334,7 +1400,8 @@
         "cpu_usage": 37.64,
         "type": "FIREWALL",
         "status_last_updated": "2025-06-10T15:02:49",
-        "uptime_hours": 2033
+        "uptime_hours": 2033,
+        "predicted_alarm_status": "GREEN"
       },
       "labels": [
         "Node"
