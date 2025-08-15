@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Network Path Predictor</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex items-center justify-center px-4">
+
+  <div class="w-full max-w-3xl bg-gray-800 rounded-2xl shadow-lg p-8">
+    <h1 class="text-3xl font-bold text-indigo-400 mb-6 text-center">Path Prediction Dashboard</h1>
+
+    <form id="predictForm" class="space-y-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <input type="text" id="source" placeholder="Enter source node" required
+          class="w-full bg-gray-700 text-white border border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-indigo-500 placeholder-gray-400" />
+        <input type="text" id="target" placeholder="Enter target node" required
+          class="w-full bg-gray-700 text-white border border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-indigo-500 placeholder-gray-400" />
+      </div>
+
+      <select id="strategy"
+        class="w-full bg-gray-700 text-white border border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-indigo-500">
+        <option value="best">Best (Risk Aware)</option>
+        <option value="latency">Lowest Latency</option>
+        <option value="hops">Shortest Hops</option>
+        <option value="risk">Lowest Risk</option>
+      </select>
+
+      <button type="submit"
+        class="w-full bg-indigo-600 text-white py-2 px-6 rounded-lg hover:bg-indigo-700 transition">
+        Predict Path
+      </button>
+    </form>
+
+    <div id="result" class="mt-8 space-y-4">
+      <!-- Results will appear here -->
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("predictForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const source = document.getElementById("source").value.trim();
+      const target = document.getElementById("target").value.trim();
+      const strategy = document.getElementById("strategy").value;
+
+      const resultDiv = document.getElementById("result");
+      resultDiv.innerHTML = '<p class="text-gray-400">Loading...</p>';
+
+      try {
+        const res = await fetch("/predict-path", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ source, target, strategy })
+        });
+
+        const data = await res.json();
+        resultDiv.innerHTML = "";
+
+        if (data.error) {
+          resultDiv.innerHTML = `<p class="text-red-400 font-semibold">${data.error}</p>`;
+        } else if (data.paths.length === 0) {
+          resultDiv.innerHTML = `<p class="text-yellow-400">${data.message || "No path found."}</p>`;
+        } else {
+          resultDiv.innerHTML = `<p class="text-green-400 font-medium">${data.message || "Paths found:"}</p>`;
+          data.paths.forEach((pathObj, index) => {
+            const card = `
+              <div class="p-4 bg-gray-700 border border-gray-600 rounded-lg shadow-sm">
+                <p class="font-semibold text-indigo-300">Path ${index + 1}: ${pathObj.path.join(" ➜ ")}</p>
+                <p class="text-sm mt-1 text-gray-300">Latency: <span class="font-medium">${pathObj.latency} ms</span></p>
+                ${pathObj.health_penalty !== undefined ? `<p class="text-sm text-yellow-400">Health Penalty: ${pathObj.health_penalty}</p>` : ""}
+                ${pathObj.risk_score !== undefined ? `<p class="text-sm text-pink-400">Risk Score: ${pathObj.risk_score}</p>` : ""}
+              </div>`;
+            resultDiv.innerHTML += card;
+          });
+        }
+      } catch (err) {
+        resultDiv.innerHTML = `<p class="text-red-600">An error occurred: ${err.message}</p>`;
+      }
+    });
+  </script>
+</body>
+</html>
