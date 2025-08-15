@@ -51,7 +51,7 @@ Node.js simulator  --->  JSON/CSV files  --->  Python trainers (XGBoost / SKLear
 
 Watch NetRouteAI in action:  
 
-[![Watch the demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://youtu.be/YOUR_VIDEO_ID)  
+[![Watch the demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://youtu.be/ZTFRi9zYU4I)  
 
 ### GIF Previews
 Real-time 5G topology visualization:
