@@ -195,8 +195,8 @@ NetRouteAI/
 
 ---
 
-## 📄 License
-This  project  is licensed under the **MIT** License.
+## License
+⚠️ This project is for personal, educational, and portfolio/demo use only. See [LICENSE](./LICENSE) for details.
 
 ---
 
