@@ -3,12 +3,12 @@ const path = require('path');
 const { parse } = require('json2csv');
 const { spawn } = require('child_process');
 
-let graph = require('./graph-data/graph.json');
+let graph = require('../static/graph-data/graph.json');
 
-const csvDir = path.join(__dirname, 'csv-data');
+const csvDir = path.join(__dirname, '../csv-data');
 if (!fs.existsSync(csvDir)) fs.mkdirSync(csvDir);
 
-const INTERVAL_MS = 2500;
+const INTERVAL_MS = 5000;
 let recordCount = 0;
 let fileIndex = 1;
 
@@ -31,13 +31,23 @@ function rotateFilesAndTrain() {
   console.log(`\n📦 Rotated CSV files at ${new Date().toLocaleTimeString()}`);
   console.log('🚀 Starting model training...\n');
 
-  const pythonProcess = spawn('python', ['ml/train_model.py']);
+  const pythonProcess = spawn('python', ['src/train_model.py']);
 
   pythonProcess.stdout.on('data', data => process.stdout.write(`🧠 ${data}`));
   pythonProcess.stderr.on('data', data => process.stderr.write(`❗ ${data}`));
   pythonProcess.on('close', code => {
-    console.log(`✅ Model training completed with code ${code}\n`);
+  console.log(`✅ Model training completed with code ${code}`);
+
+  console.log('🚨 Starting alarm classifier training...\n');
+  const alarmProcess = spawn('python', ['src/train_alarm_classifier.py']);
+
+  alarmProcess.stdout.on('data', data => process.stdout.write(`🔔 ${data}`));
+  alarmProcess.stderr.on('data', data => process.stderr.write(`❗ ${data}`));
+  alarmProcess.on('close', code => {
+    console.log(`✅ Alarm classifier training completed with code ${code}\n`);
   });
+});
+
 }
 
 function appendCsv(filePath, data, fields) {
@@ -181,7 +191,7 @@ setInterval(() => {
   const updatedGraph = updateGraphData(graph);
   const timestamp = new Date().toISOString();
 
-  const livePath = path.join(__dirname, 'graph-data', 'graph_live.json');
+  const livePath = path.join(__dirname, '../static/graph-data', 'graph_live.json');
   fs.writeFileSync(livePath, JSON.stringify(updatedGraph, null, 2));
 
 

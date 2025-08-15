@@ -6,7 +6,7 @@ from sklearn.metrics import classification_report
 import joblib
 
 # Load latest N node CSVs
-NUM_RECENT = 5
+NUM_RECENT = 20
 files = sorted(glob.glob("csv-data/node_data_*.csv"), reverse=True)[:NUM_RECENT]
 df = pd.concat([pd.read_csv(f) for f in files], ignore_index=True)
 
@@ -31,6 +31,6 @@ y_pred = model.predict(X_test)
 print(classification_report(y_test, y_pred, target_names=alarm_map.keys()))
 
 # Save model
-joblib.dump(model, "ml/xgb_alarm_model.pkl")
+joblib.dump(model, "models/xgb_alarm_model.pkl")
 print("✅ Alarm status classifier saved.")
 

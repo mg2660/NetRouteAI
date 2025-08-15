@@ -5,7 +5,7 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 
 # Load model once
-model = joblib.load("ml/xgb_latency_model.pkl")
+model = joblib.load("models/xgb_latency_model.pkl")
 
 # Alarm status encoding
 alarm_map = {"GREEN": 0, "YELLOW": 1, "RED": 2}
@@ -20,7 +20,7 @@ print("🔁 Starting latency prediction loop...")
 while time.time() - start_time < RUN_DURATION_SECONDS:
     try:
         # Load graph-live.json
-        with open("graph-data/graph_live.json") as f:
+        with open("static/graph-data/graph_live.json") as f:
             graph = json.load(f)
 
         node_map = {n["id"]: n for n in graph["nodes"]}
@@ -46,7 +46,7 @@ while time.time() - start_time < RUN_DURATION_SECONDS:
             predicted_latency = model.predict([features])[0]
             link["properties"]["predicted_latency_ms"] = float(round(predicted_latency, 2))
 
-        with open("graph-data/graph_live_predicted.json", "w") as f:
+        with open("static/graph-data/graph_live_predicted.json", "w") as f:
             json.dump(graph, f, indent=2)
 
         print(f"✅ [{time.strftime('%H:%M:%S')}] Predictions updated.")

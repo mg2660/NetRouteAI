@@ -6,7 +6,7 @@ from sklearn.metrics import mean_absolute_error, r2_score
 import joblib
 
 # === Load latest N CSV files ===
-NUM_RECENT = 10
+NUM_RECENT = 20
 files = sorted(glob.glob("csv-data/link_data_*.csv"), reverse=True)[:NUM_RECENT]
 df = pd.concat([pd.read_csv(f) for f in files], ignore_index=True)
 
@@ -43,5 +43,5 @@ print("MAE:", mae)
 print("R2 Score:", r2)
 
 # === Save the Trained Model ===
-joblib.dump(model, "ml/xgb_latency_model.pkl")
+joblib.dump(model, "models/xgb_latency_model.pkl")
 print("✅ Model saved to ml/xgb_latency_model.pkl")

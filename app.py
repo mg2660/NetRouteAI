@@ -1,27 +1,70 @@
 from flask import Flask, request, jsonify, render_template
-import networkx as nx
-import json
+from flask_cors import CORS
+import subprocess
+import os, json, networkx as nx
+from threading import Lock
+
+ai_process = None
+ai_process_lock = Lock()
+
 
 app = Flask(__name__)
+CORS(app)
 
-@app.route("/")
-def home():
-    return render_template("predict_path.html")
+GRAPH_DIR = os.path.join("static", "graph-data")
+
+@app.route("/ai-analysis/start", methods=["POST"])
+def start_ai_analysis():
+    global ai_process
+    with ai_process_lock:
+        if ai_process is None or ai_process.poll() is not None:
+            ai_process = subprocess.Popen(["python", "src/aiAnalysis.py"], shell=True)
+            return jsonify({"status": "started"}), 200
+        else:
+            return jsonify({"status": "already running"}), 200
+
+@app.route("/ai-analysis/stop", methods=["POST"])
+def stop_ai_analysis():
+    global ai_process
+    with ai_process_lock:
+        if ai_process and ai_process.poll() is None:
+            ai_process.terminate()
+            ai_process.wait()
+            ai_process = None
+            return jsonify({"status": "stopped"}), 200
+        else:
+            return jsonify({"status": "not running"}), 200
 
 def health_to_penalty(status):
     return {"GREEN": 0.0, "YELLOW": 0.5, "RED": 1.0}.get(status, 1.0)
 
+def launch_background_scripts():
+    print("🚀 Launching mock data scripts in background...")
+    subprocess.Popen(["node", "src/patterned_mock_graph_generator.js"], shell=True)
+    subprocess.Popen(["python", "src/predict_latency.py"], shell=True)
+    subprocess.Popen(["python", "src/predict_alarm_status.py"], shell=True)
+
+# ✅ Run once at app startup
+with app.app_context():
+    launch_background_scripts()
+
+@app.route("/")
+def home():
+    return render_template("index.html")
+
+
 @app.route("/predict-path", methods=["POST"])
 def predict_path():
+    print("POST /predict-path called")
     data = request.get_json()
     source = data.get("source")
     target = data.get("target")
-    strategy = data.get("strategy", "best")  # default to 'best'
+    strategy = data.get("strategy", "best")
 
     try:
-        with open("graph_live_predicted.json") as f:
+        with open(os.path.join(GRAPH_DIR, "graph_live_predicted.json")) as f:
             latency_data = json.load(f)
-        with open("graph_live_alarm_predicted.json") as f:
+        with open(os.path.join(GRAPH_DIR, "graph_live_alarm_predicted.json")) as f:
             alarm_data = json.load(f)
     except Exception as e:
         return jsonify({"error": f"Error reading files: {str(e)}"}), 500
@@ -31,7 +74,6 @@ def predict_path():
         for node in alarm_data["nodes"]
     }
 
-    # Build graph with all nodes
     G = nx.DiGraph()
     for link in latency_data.get("links", []):
         src = link["source"]
@@ -39,7 +81,6 @@ def predict_path():
         latency = link["properties"].get("predicted_latency_ms", 9999)
         G.add_edge(src, tgt, latency=latency)
 
-    # Exclude RED nodes globally for all strategies
     unhealthy_nodes = {node_id for node_id, status in health_map.items() if status == "RED"}
     G.remove_nodes_from(unhealthy_nodes)
 
@@ -78,7 +119,11 @@ def predict_path():
                     continue
 
             if not paths:
-                return jsonify({"paths": [], "message": "No valid paths found (all RED nodes excluded)", "cutoff_used": None})
+                return jsonify({
+                    "paths": [],
+                    "message": "No valid paths found",
+                    "cutoff_used": None
+                })
 
             max_latency = max((G[u][v]['latency'] for u, v in G.edges), default=1)
             result = []
@@ -98,7 +143,7 @@ def predict_path():
             return jsonify({
                 "paths": result[:5],
                 "cutoff_used": used_cutoff,
-                "message": f"Lowest risk path using cutoff {used_cutoff}, RED nodes excluded"
+                "message": f"Lowest risk path using cutoff {used_cutoff}"
             })
 
         else:
