@@ -47,6 +47,22 @@ Node.js simulator  --->  JSON/CSV files  --->  Python trainers (XGBoost / SKLear
 
 ---
 
+## 🎬 Demo Video & GIFs
+
+Watch NetRouteAI in action:  
+
+[![Watch the demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://youtu.be/YOUR_VIDEO_ID)  
+
+### GIF Previews
+Real-time 5G topology visualization:
+
+![Topology GIF](static/gifs/topology.gif)  
+
+AI Analysis dashboard with predicted latency and node health:
+
+![AI Dashboard GIF](static/gifs/ai_dashboard.gif)
+
+
 ## 📦 Requirements
 - **Python** 3.9+
 - **Node.js** 16+ (for the simulator & json2csv)
