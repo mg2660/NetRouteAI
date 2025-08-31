@@ -64,7 +64,11 @@ Real-time 5G topology visualization:
 
 AI Analysis dashboard with predicted latency and node health:
 
-![AI Dashboard GIF](static/gifs/ai_dashboard.gif)
+![AI Dashboard GIF](static/gifs/aianalysis.gif)
+
+Path finder with different criteria (auto-refresh paths):
+
+![AI Dashboard GIF](static/gifs/pathfinder.gif)
 
 
 ## 📦 Requirements
