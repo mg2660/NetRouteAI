@@ -54,6 +54,10 @@ Watch NetRouteAI in action:
 [![Watch the demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://youtu.be/ZTFRi9zYU4I)  
 
 ### GIF Previews
+Intro Screen:
+
+![Intro GIF](static/gifs/intro.gif)
+
 Real-time 5G topology visualization:
 
 ![Topology GIF](static/gifs/topology.gif)  
